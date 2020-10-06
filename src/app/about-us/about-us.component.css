@@ -1,0 +1,43 @@
+.bigAboutUs{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #151515;
+  font-size: 36px;
+}
+
+.smallAboutUs{
+  font-family: 'Poppins', sans-serif;
+  color: #848484;
+  font-size: 14px;
+}
+
+.bigArtists{
+  font-family: 'Poppins', sans-serif;
+  color: #151515;
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+}
+.photoBlock{
+  text-align: center;
+}
+
+.artistPhoto{
+  padding: 16px;
+  object-fit: cover;
+  text-align: center;
+  width: 400px;
+  height: 400px;
+}
+
+.painter{
+  font-family: 'Poppins', sans-serif;
+  color: #151515;
+  font-size: 24px;
+}
+
+@media (max-width: 500px) {
+  .artistPhoto{
+    width: 100%;
+  }
+}

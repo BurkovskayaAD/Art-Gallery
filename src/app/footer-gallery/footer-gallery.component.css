@@ -1,0 +1,27 @@
+.info-block{
+  color: white;
+  font-size: 25px;
+  font-family: 'Bebas Neue', cursive;
+  border-bottom: 1px solid white;
+  padding-top: 40px;
+  width: 70%;
+  margin-left: 5px;
+}
+
+.info-text{
+  color: white;
+  font-size: 17px;
+  font-family: 'Lato', sans-serif;
+  margin-left: 5px;
+  display: block;
+  padding-top: 4px;
+}
+
+.row{
+  background-color: #4a4a4a;
+  margin-right: 0px;
+}
+
+.iframe-block{
+  margin-left: 5px;
+}

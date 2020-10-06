@@ -1,0 +1,15 @@
+.row{
+  border: 1px solid #ebebeb;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 0;
+  z-index: 1;
+}
+.navigation{
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  color: #363d41;
+  padding: 0;
+  margin: 0;
+}
