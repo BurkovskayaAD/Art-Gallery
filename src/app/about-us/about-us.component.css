@@ -1,28 +1,29 @@
-.bigAboutUs{
+.about-us{
   font-family: 'Poppins', sans-serif;
+}
+
+.big-aboutUs{
   font-weight: 700;
   color: #151515;
   font-size: 36px;
 }
 
-.smallAboutUs{
-  font-family: 'Poppins', sans-serif;
+.small-aboutUs{
   color: #848484;
   font-size: 14px;
 }
 
-.bigArtists{
-  font-family: 'Poppins', sans-serif;
+.big-artists{
   color: #151515;
   font-weight: 700;
   font-size: 60px;
   text-align: center;
 }
-.photoBlock{
+.artist-photo-block{
   text-align: center;
 }
 
-.artistPhoto{
+.artist-photo{
   padding: 16px;
   object-fit: cover;
   text-align: center;
@@ -31,13 +32,16 @@
 }
 
 .painter{
-  font-family: 'Poppins', sans-serif;
   color: #151515;
   font-size: 24px;
 }
 
+.line-separator-top{
+  border-top: 1px solid #f1f1f1;
+}
+
 @media (max-width: 500px) {
-  .artistPhoto{
+  .artist-photo{
     width: 100%;
   }
 }

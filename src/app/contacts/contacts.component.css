@@ -1,21 +1,20 @@
-.bigTextContacts{
+.contacts{
   font-family: 'Poppins', sans-serif;
+}
+
+.big-textContacts{
   font-size: 40px;
   color: #151515;
   font-weight: bold;
   text-align: center;
 }
-.smallTextContacts{
-  font-family: 'Poppins', sans-serif;
+.small-textContacts{
   font-size: 14px;
   color: #848484;
   text-align: center;
 }
-.btnStyle{
+.button-style{
   background-color: #af9f7b;
-  font-family: 'Poppins', sans-serif;
   color: white;
 }
-.fo-fa{
-  font-family: 'Poppins', sans-serif;
-}
+

@@ -1,11 +1,14 @@
-.cover{
+.gallery{
+  font-family: 'Poppins', sans-serif;
+}
+
+.paint{
   object-fit: cover;
   height: 400px;
   padding: 10px;
 }
 
-.namePaint{
-  font-family: 'Poppins', sans-serif;
+.name-paint{
   font-size: 24px;
   color: #151515;
   text-align: center;

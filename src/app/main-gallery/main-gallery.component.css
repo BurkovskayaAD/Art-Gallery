@@ -1,9 +1,12 @@
+.main-gallery{
+  font-family: 'Poppins', sans-serif;
+}
+
 .block-aboutUs{
   margin-right: 0;
 }
 .text-aboutUs{
   background-color: #f1f1f1;
-  font-family: 'Poppins', sans-serif;
   min-height: 300px;
   margin-right: 0;
 }
@@ -28,21 +31,19 @@
   padding-left: 10px;
 }
 
-.works{
+.line-separator{
   border-bottom: 1px solid #f1f1f1;
 }
-.works-name{
-  font-family: 'Poppins', sans-serif;
+.line-separator-name{
   font-size: 36px;
   color: #151515;
   font-weight: bold;
 }
-.works-text{
-  font-family: 'Poppins', sans-serif;
+.line-separators-text{
   font-size: 18px;
   color: #151515;
 }
-.gallery {
+.gallery-main-block {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -56,21 +57,20 @@
   justify-content: center;
   height: 500px;
   width: 100%;
-  /* max-width: 350px; */
 }
 
-.article__img {
+.article-img {
   padding: 5px;
 }
 
-.article--small .article__img {
+.article-small .article-img {
   display: inline-block;
   object-fit: cover;
   width: 100%;
   height: 50%;
 }
 
-.article--huge .article__img {
+.article-huge .article-img {
   display: inline-block;
   object-fit: cover;
   height: 100%;
@@ -79,7 +79,6 @@
 
 .bc-pricesTestimonials{
   background-color: #f1f1f1;
-  font-family: 'Poppins', sans-serif;
 }
 
 .type-picture{
@@ -98,12 +97,12 @@
   float: right;
 }
 
-.textPicture{
+.about-picture{
   font-size: 14px;
   color: #848484;
 }
 
-.mainTestimonial{
+.main-testimonial{
   font-size: 24px;
   color: #151515;
   display: inline-block;
@@ -111,7 +110,7 @@
   width: 65%;
 }
 
-.secondTestimonial{
+.second-testimonial{
   color: #848484;
   font-size: 14px;
 }
@@ -129,7 +128,7 @@
 }
 
 @media (max-width: 600px) {
-  .mainTestimonial{
+  .main-testimonial{
     width: 50%;
   }
 }

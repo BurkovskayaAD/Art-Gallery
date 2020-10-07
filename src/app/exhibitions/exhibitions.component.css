@@ -1,25 +1,25 @@
-.mainTextExhibition{
+.exhibitions{
   font-family: 'Poppins', sans-serif;
+}
+
+.main-text-exhibition{
   color: #af9f7b;
   font-size: 20px;
 }
 
-.nameExhibition{
-  font-family: 'Poppins', sans-serif;
+.name-exhibition{
   color: #151515;
   font-size: 24px;
   font-weight: bold;
 }
 
-.dateExhibition{
-  font-family: 'Poppins', sans-serif;
+.date-exhibition{
   color: #151515;
   font-size: 20px;
   font-weight: bold;
 }
 
-.aboutExhibition{
-  font-family: 'Poppins', sans-serif;
+.about-exhibition{
   color: #151515;
   font-size: 15px;
 }
