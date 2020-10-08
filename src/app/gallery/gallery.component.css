@@ -2,6 +2,21 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.photo-style{
+  object-fit: cover;
+  height: 300px;
+  position: relative;
+}
+.big-text-photo{
+  color: white;
+  position: absolute;
+  bottom: 540px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+  font-size: 80px;
+  left: 100px;
+}
+
 .paint{
   object-fit: cover;
   height: 400px;
@@ -17,5 +32,12 @@
 @media (max-width: 768px) {
   .cover{
     height: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .big-text-photo{
+    bottom: 470px;
+    font-size: 50px;
+    left: 15px;
   }
 }
