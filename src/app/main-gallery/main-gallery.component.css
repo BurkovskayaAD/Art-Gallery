@@ -15,6 +15,8 @@
   left: 80px;
   font-weight: bold;
   text-shadow: 1px 1px 2px black;
+  font-family: 'Poppins', sans-serif;
+
 }
 .small-main-text{
   color: white;
@@ -24,37 +26,49 @@
   left: 80px;
   font-weight: bold;
   text-shadow: 1px 1px 2px black;
+  font-family: 'Poppins', sans-serif;
+
 }
 .button-main{
-  background-color: #af9f7b;
+  background-color: lightblue;
   color: white;
-  font-size: 30px;
+  font-size: 18px;
   position: absolute;
   left: 80px;
-  bottom: 390px;
+  bottom: 370px;
   /*text-shadow: 1px 1px 2px black;*/
   box-shadow: 0 0 10px black;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 .block-aboutUs{
   margin-right: 0;
 }
 .text-aboutUs{
+  padding: 0;
   background-color: #f1f1f1;
   min-height: 300px;
   margin-right: 0;
+  font-family: 'Poppins', sans-serif;
+
 }
 .big-text{
   color: black;
   font-size: 60px;
   font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+
+
 }
 .small-text{
   font-size: 14px;
   color: #9b9b9b;
+  font-family: 'Poppins', sans-serif;
+
 }
 .color-or{
-  color: #af9f7b;
+  color: lightblue;
   display: inline-block;
 }
 .color-bl{
@@ -72,43 +86,51 @@
   font-size: 36px;
   color: #151515;
   font-weight: bold;
+  font-family: 'Poppins', sans-serif;
 }
 .line-separators-text{
   font-size: 18px;
   color: #151515;
+  font-family: 'Poppins', sans-serif;
 }
-.gallery-main-block {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+/*.gallery-main-block {*/
+/*  width: 100%;*/
+/*  display: flex;*/
+/*  flex-wrap: wrap;*/
+/*  justify-content: center;*/
+/*}*/
 
-.article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 500px;
-  width: 100%;
-}
+/*.article {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  height: 500px;*/
+/*  width: 100%;*/
+/*}*/
 
-.article-img {
-  padding: 5px;
-}
+/*.article-img {*/
+/*  padding: 5px;*/
+/*}*/
 
-.article-small .article-img {
-  display: inline-block;
-  object-fit: cover;
-  width: 100%;
-  height: 50%;
-}
+/*.article-small .article-img {*/
+/*  display: inline-block;*/
+/*  object-fit: cover;*/
+/*  width: 100%;*/
+/*  height: 50%;*/
+/*}*/
 
-.article-huge .article-img {
-  display: inline-block;
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
+/*.article-huge .article-img {*/
+/*  display: inline-block;*/
+/*  object-fit: cover;*/
+/*  height: 100%;*/
+/*  width: 100%;*/
+/*}*/
+
+.works-name{
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
 }
 
 .bc-pricesTestimonials{
@@ -149,18 +171,6 @@
   font-size: 14px;
 }
 
-@media (min-width: 600px){
-  .article {
-    width: 50%;
-  }
-}
-
-@media (min-width: 1300px){
-  .article {
-    width: 25%;
-  }
-}
-
 @media (max-width: 600px) {
   .main-testimonial{
     width: 50%;
@@ -184,7 +194,7 @@
   .button-main{
     font-size: 20px;
     left: 30px;
-    bottom: 520px;
+    bottom: 500px;
   }
 }
 
@@ -199,7 +209,7 @@
     bottom: 500px;
   }
   .button-main{
-    bottom: 450px;
+    bottom: 430px;
   }
 }
 
@@ -211,9 +221,9 @@
     bottom: 490px;
   }
   .small-main-text{
-    bottom: 350px;
+    bottom: 410px;
   }
   .button-main{
-    bottom: 300px;
+    bottom: 350px;
   }
 }

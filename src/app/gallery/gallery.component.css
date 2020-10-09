@@ -6,11 +6,12 @@
   object-fit: cover;
   height: 300px;
   position: relative;
+  font-family: 'Poppins', sans-serif;
 }
 .big-text-photo{
   color: white;
   position: absolute;
-  bottom: 540px;
+  bottom: 530px;
   font-weight: bold;
   text-shadow: 1px 1px 2px black;
   font-size: 80px;

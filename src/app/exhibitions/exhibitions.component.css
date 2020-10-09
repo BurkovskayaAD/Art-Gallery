@@ -10,16 +10,18 @@
 .big-text-photo{
   color: white;
   position: absolute;
-  bottom: 540px;
+  bottom: 530px;
   font-weight: bold;
   text-shadow: 1px 1px 2px black;
   font-size: 80px;
   left: 100px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .main-text-exhibition{
-  color: #af9f7b;
+  color: lightblue;
   font-size: 20px;
+  padding: 5px 0;
 }
 
 .name-exhibition{

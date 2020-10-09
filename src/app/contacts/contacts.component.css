@@ -8,9 +8,10 @@
   position: relative;
 }
 .big-text-photo{
+  font-family: 'Poppins', sans-serif;
   color: white;
   position: absolute;
-  bottom: 540px;
+  bottom: 530px;
   font-weight: bold;
   text-shadow: 1px 1px 2px black;
   font-size: 80px;
