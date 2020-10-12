@@ -15,16 +15,16 @@
 
 
 
-<!--  <div class="gallery-main-block py-5 px-3">-->
+  <div class="gallery-main-block py-5 px-3">
 
-<!--    <article class="article article-huge">-->
-<!--      <img class="article-img" src="assets/5.jpg" alt="">-->
-<!--    </article>-->
+    <article class="article article-huge" *ngFor="let item of list">
+      <img class="article-img" src="{{item.url}}" alt="paint">
+    </article>
 
-<!--    <article class="article article-small">-->
-<!--      <img class="article-img" src="assets/6.jpg" alt="">-->
-<!--      <img class="article-img" src="assets/7.jpg" alt="">-->
-<!--    </article>-->
+    <article class="article article-small" *ngFor="let item of list">
+      <img class="article-img" src="{{item.url}}" alt="paint">
+      <img class="article-img" src="{{item.url}}" alt="paint">
+    </article>
 
 <!--    <article class="article article-huge">-->
 <!--      <img class="article-img" src="assets/8.jpg" alt="">-->
@@ -34,4 +34,4 @@
 <!--      <img class="article-img" src="assets/9.jpg" alt="">-->
 <!--      <img class="article-img" src="assets/10.jpeg" alt="">-->
 <!--    </article>-->
-<!--  </div>-->
+  </div>

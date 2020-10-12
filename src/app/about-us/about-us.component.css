@@ -2,6 +2,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.main-photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .photo-style{
   object-fit: cover;
   height: 300px;
@@ -10,12 +16,14 @@
 .big-text-photo{
   color: white;
   position: absolute;
-  bottom: 530px;
   font-weight: bold;
   text-shadow: 1px 1px 2px black;
   font-size: 80px;
-  left: 100px;
+  font-family: 'Poppins', sans-serif;
+
 }
+
+
 
 .big-aboutUs{
   font-weight: 700;
@@ -65,8 +73,6 @@
 
 @media (max-width: 767px) {
   .big-text-photo{
-    bottom: 470px;
     font-size: 50px;
-    left: 15px;
   }
 }
