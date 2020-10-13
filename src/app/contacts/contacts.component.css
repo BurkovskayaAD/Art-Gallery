@@ -39,6 +39,23 @@
   color: white;
 }
 
+.big-text-social{
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  border-bottom: 1px solid lightblue;
+}
+
+.small-text-social{
+  display: block;
+  padding: 5px 0;
+  color: #363d41;
+}
+
+.last{
+  padding-bottom: 30px;
+}
+
 @media (max-width: 767px) {
   .big-text-photo{
     font-size: 50px;

@@ -12,27 +12,16 @@ export class GalleryInMainComponent implements OnInit {
   public list = [];
   public url = [];
 
-
-  // ngOnInit(): void{
-  //   this.list = [
-  //     {rows : 2, cols : 1, url : 'assets/14.jpg'},
-  //     {rows : 1, cols : 1, url : 'assets/10.jpeg'},
-  //     {rows : 2, cols : 1, url : 'assets/13.jpg'},
-  //     {rows : 1, cols : 1, url : 'assets/11.jpeg'},
-  //     {rows : 1, cols : 1, url : 'assets/5.jpg'},
-  //     {rows : 1, cols : 1, url : 'assets/7.jpg'},
-  //   ];
-  // }
-
   ngOnInit(): void{
     this.list = [
-      {url : 'assets/14.jpg'},
-      {url : ''},
-      {url : 'assets/10.jpeg'},
-      {url : 'assets/13.jpg'},
-      {url : 'assets/11.jpeg'},
-      {url : 'assets/5.jpg'},
-      {url : 'assets/7.jpg'},
+      {huge : true, url : 'assets/14.jpg'},
+      {huge : false, url : {
+        url1 : 'assets/10.jpeg', url2 : 'assets/11.jpeg'
+      }},
+      {huge : true, url : 'assets/13.jpg'},
+      {huge : false, url : {
+          url1 : 'assets/5.jpg', url2 : 'assets/7.jpg'
+        }},
     ];
   }
 }

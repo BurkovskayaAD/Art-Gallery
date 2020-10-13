@@ -1,30 +1,43 @@
-<!--<div class="gallery-in-main py-5">-->
 
-<!--  <mat-grid-list cols="4" rowHeight="50%" class="gallery-grid">-->
-<!--    <mat-grid-tile-->
-<!--      *ngFor="let item of list"-->
-<!--      [rowspan]="item.rows"-->
-<!--      [colspan]="item.cols">-->
-<!--      <img src="{{item.url}}" alt="paint" class="picture-gallery">-->
-<!--    </mat-grid-tile>-->
-
-<!--  </mat-grid-list>-->
-
-<!--</div>-->
-
-
-
-
+<div>
   <div class="gallery-main-block py-5 px-3">
 
-    <article class="article article-huge" *ngFor="let item of list">
-      <img class="article-img" src="{{item.url}}" alt="paint">
-    </article>
+    <div class="block-with-array" *ngFor="let item of list">
+      <div *ngIf="item.huge">
+        <img src="{{item.url}}" alt="paint" class="article-img article-huge">
+      </div>
+      <div *ngIf="!item.huge">
+        <img src="{{item.url.url1}}" alt="paint" class="article-img article-small">
+        <img src="{{item.url.url2}}" alt="paint" class="article-img article-small">
+      </div>
 
-    <article class="article article-small" *ngFor="let item of list">
-      <img class="article-img" src="{{item.url}}" alt="paint">
-      <img class="article-img" src="{{item.url}}" alt="paint">
-    </article>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    <article class="article article-huge" *ngFor="let item of list">-->
+<!--      <img *ngIf="item.huge" class="article-img" src="{{item.url}}" alt="paint">-->
+<!--    </article>-->
+
+<!--    <article class="article article-small" *ngFor="let item of list">-->
+<!--      <img *ngIf="!item.huge" class="article-img" src="{{item.url}}" alt="paint">-->
+<!--      <img *ngIf="!item.huge" class="article-img" src="{{item.url}}" alt="paint">-->
+<!--    </article>-->
 
 <!--    <article class="article article-huge">-->
 <!--      <img class="article-img" src="assets/8.jpg" alt="">-->
@@ -34,4 +47,4 @@
 <!--      <img class="article-img" src="assets/9.jpg" alt="">-->
 <!--      <img class="article-img" src="assets/10.jpeg" alt="">-->
 <!--    </article>-->
-  </div>
+
