@@ -2,8 +2,6 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  flex-direction: column;
-  height: 500px;
   flex-wrap: wrap;
 }
 .block-with-array{
@@ -32,3 +30,14 @@
   padding: 5px;
 }
 
+@media (max-width: 850px) {
+  .block-with-array{
+    width: 50%;
+  }
+}
+
+@media (max-width: 520px) {
+  .block-with-array{
+    width: 100%;
+  }
+}
