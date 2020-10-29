@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
+import {HttpClientModule} from '@angular/common/http';
 import {MatGridListModule} from '@angular/material/grid-list';
 
 import { AppComponent } from './app.component';
@@ -14,6 +15,8 @@ import { ContactsComponent } from './components/contacts/contacts.component';
 import { GalleryInMainComponent } from './components/gallery-in-main/gallery-in-main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainDashboardComponent } from './components/dashboard/main-dashboard/main-dashboard.component';
+import { ArtistsDashboardComponent } from './components/dashboard/artists-dashboard/artists-dashboard.component';
+import {HttpServicesService} from './services/http-services.service';
 
 const appRoutes: Routes = [
   {path: '', component: MainGalleryComponent},
@@ -21,7 +24,8 @@ const appRoutes: Routes = [
   {path: 'exhibitions', component: ExhibitionsComponent},
   {path: 'gallery', component: GalleryComponent},
   {path: 'contacts', component: ContactsComponent},
-  {path: 'dashboard', component: MainDashboardComponent}
+  {path: 'dashboard', component: MainDashboardComponent},
+  {path: 'dashboard-artists', component: ArtistsDashboardComponent}
 ];
 
 @NgModule({
@@ -35,15 +39,17 @@ const appRoutes: Routes = [
     GalleryComponent,
     ContactsComponent,
     GalleryInMainComponent,
-    MainDashboardComponent
+    MainDashboardComponent,
+    ArtistsDashboardComponent
   ],
   imports: [
     BrowserModule,
     MatGridListModule,
     RouterModule.forRoot(appRoutes),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpServicesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
