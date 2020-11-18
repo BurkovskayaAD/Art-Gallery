@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import {HttpServicesService} from '../../services/http-services.service';
+import { Constants } from '../../Constants';
 
 @Component({
   selector: 'app-gallery-in-main',
@@ -7,10 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryInMainComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpServicesService) { }
+
+  painting;
 
   public list = [];
   public url = [];
+
+
 
   ngOnInit(): void{
     this.list = [
@@ -23,5 +30,12 @@ export class GalleryInMainComponent implements OnInit {
           url1 : 'assets/5.jpg', url2 : 'assets/7.jpg'
         }},
     ];
+  }
+
+  search(): void{
+    this.http.get(Constants.paintingsApiUrl).subscribe(
+      (painting) => {this.painting = painting; console.log(this.painting); },
+      error => {alert('Something went wrong'); }
+    );
   }
 }
