@@ -20,6 +20,12 @@ export class GalleryInMainComponent implements OnInit {
 
 
   ngOnInit(): void{
+    this.http.get(Constants.paintingsApiUrl).subscribe(
+      (painting) => {this.painting = painting; console.log(this.painting); },
+      error => {alert('Something went wrong'); }
+    );
+    // const pict = atob(decodeURIComponent(this.painting.picture));
+
     this.list = [
       {huge : true, url : 'assets/14.jpg'},
       {huge : false, url : {
@@ -30,12 +36,5 @@ export class GalleryInMainComponent implements OnInit {
           url1 : 'assets/5.jpg', url2 : 'assets/7.jpg'
         }},
     ];
-  }
-
-  search(): void{
-    this.http.get(Constants.paintingsApiUrl).subscribe(
-      (painting) => {this.painting = painting; console.log(this.painting); },
-      error => {alert('Something went wrong'); }
-    );
   }
 }
