@@ -52,16 +52,21 @@
   text-align: center;
   width: 400px;
   height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .painter{
   color: #151515;
   font-size: 24px;
+  text-align: center;
 }
 
 .line-separator-top{
   border-top: 1px solid #f1f1f1;
 }
+
 
 @media (max-width: 500px) {
   .artist-photo{
