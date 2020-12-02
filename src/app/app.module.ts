@@ -5,17 +5,15 @@ import {HttpClientModule} from '@angular/common/http';
 import {MatGridListModule} from '@angular/material/grid-list';
 
 import { AppComponent } from './app.component';
-import { HeaderGalleryComponent } from './components/header-gallery/header-gallery.component';
-import { FooterGalleryComponent } from './components/footer-gallery/footer-gallery.component';
-import { MainGalleryComponent } from './components/main-gallery/main-gallery.component';
-import { AboutUsComponent } from './components/about-us/about-us.component';
-import { ExhibitionsComponent } from './components/exhibitions/exhibitions.component';
-import { GalleryComponent } from './components/gallery/gallery.component';
-import { ContactsComponent } from './components/contacts/contacts.component';
-import { GalleryInMainComponent } from './components/gallery-in-main/gallery-in-main.component';
+import { HeaderGalleryComponent } from './components/header/header-gallery.component';
+import { FooterGalleryComponent } from './components/footer/footer-gallery.component';
+import { MainGalleryComponent } from './components/page-main/main-gallery.component';
+import { AboutUsComponent } from './components/page-about/about-us.component';
+import { ExhibitionsComponent } from './components/page-exhibitions/exhibitions.component';
+import { GalleryComponent } from './components/page-gallery/gallery.component';
+import { ContactsComponent } from './components/page-contacts/contacts.component';
+import { GalleryInMainComponent } from './components/page-main-gallery/gallery-in-main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MainDashboardComponent } from './components/dashboard/main-dashboard/main-dashboard.component';
-import { ArtistsDashboardComponent } from './components/dashboard/artists-dashboard/artists-dashboard.component';
 import {HttpServicesService} from './services/http-services.service';
 
 const appRoutes: Routes = [
@@ -23,9 +21,7 @@ const appRoutes: Routes = [
   {path: 'about', component: AboutUsComponent},
   {path: 'exhibitions', component: ExhibitionsComponent},
   {path: 'gallery', component: GalleryComponent},
-  {path: 'contacts', component: ContactsComponent},
-  {path: 'dashboard', component: MainDashboardComponent},
-  {path: 'dashboard-artists', component: ArtistsDashboardComponent}
+  {path: 'contacts', component: ContactsComponent}
 ];
 
 @NgModule({
@@ -38,9 +34,7 @@ const appRoutes: Routes = [
     ExhibitionsComponent,
     GalleryComponent,
     ContactsComponent,
-    GalleryInMainComponent,
-    MainDashboardComponent,
-    ArtistsDashboardComponent
+    GalleryInMainComponent
   ],
   imports: [
     BrowserModule,

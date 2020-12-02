@@ -6,7 +6,7 @@ import { Constants } from '../../Constants';
 @Component({
   selector: 'app-gallery-in-main',
   templateUrl: './gallery-in-main.component.html',
-  styleUrls: ['./gallery-in-main.component.css']
+  styleUrls: ['./gallery-in-main.component.scss']
 })
 export class GalleryInMainComponent implements OnInit {
 

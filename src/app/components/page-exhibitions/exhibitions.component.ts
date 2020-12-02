@@ -5,7 +5,7 @@ import { Constants } from '../../Constants';
 @Component({
   selector: 'app-exhibitions',
   templateUrl: './exhibitions.component.html',
-  styleUrls: ['./exhibitions.component.css']
+  styleUrls: ['./exhibitions.component.scss']
 })
 export class ExhibitionsComponent implements OnInit {
 
