@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpServicesService} from '../../services/http-services.service';
+import { Constants } from '../../Constants';
+
 
 @Component({
   selector: 'app-gallery',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpServicesService) { }
+
+  painting;
 
   ngOnInit(): void {
+    this.http.get(Constants.paintingsApiUrl).subscribe(
+      (painting) => {this.painting = painting; console.log(this.painting); }
+    );
   }
 
 }

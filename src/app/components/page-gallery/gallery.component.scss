@@ -26,7 +26,11 @@
 .paint{
   object-fit: cover;
   height: 400px;
+  width: 350px;
   padding: 10px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .name-paint{
