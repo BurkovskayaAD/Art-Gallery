@@ -73,7 +73,7 @@
     <h2 class="big-artists line-separator-top pt-5">Our Artists</h2>
     <div class="row">
         <div *ngFor="let item of artist" class="col-md h-500">
-        <img src="../../../assets/vangoh.jpg" alt="gogh" class="artist-photo">
+        <img src="{{item.photo}}" alt="gogh" class="artist-photo">
         <div class="painter">{{item.name}} | {{item.occupation}}</div>
       </div>
     </div>

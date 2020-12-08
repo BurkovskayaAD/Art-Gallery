@@ -1,9 +1,9 @@
 
 <div>
 
-  <div *ngIf="painting">
-    <div *ngFor = "let item of painting">{{item.picture}}</div>
-  </div>
+<!--  <div *ngIf="painting">-->
+<!--    <div *ngFor = "let item of painting">{{item.picture}}</div>-->
+<!--  </div>-->
 
 
 
@@ -13,15 +13,14 @@
 
     <div class="block-with-array" *ngFor="let item of list">
       <div *ngIf="item.huge">
-        <img src="{{item.url}}" alt="paint" class="article-img article-huge">
+        <img src="{{item.picture}}" alt="paint" class="article-img article-huge">
       </div>
       <div *ngIf="!item.huge">
-        <img src="{{item.url.url1}}" alt="paint" class="article-img article-small">
-        <img src="{{item.url.url2}}" alt="paint" class="article-img article-small">
+        <img src="{{item.url1}}" alt="paint" class="article-img article-small">
+        <img src="{{item.url2}}" alt="paint" class="article-img article-small">
       </div>
 
     </div>
-
   </div>
 </div>
 

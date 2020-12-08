@@ -9,7 +9,7 @@
   <div class="block-gallery py-5">
     <div class="row">
       <div *ngFor="let item of painting" class="col-md p-0">
-        <img src="../../../assets/10.jpeg" alt="paint" class="paint">
+        <img src="{{item.picture}}" alt="paint" class="paint">
         <div class="name-paint">{{item.name}}</div>
       </div>
     </div>
