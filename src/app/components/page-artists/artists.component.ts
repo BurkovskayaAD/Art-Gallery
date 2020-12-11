@@ -5,10 +5,10 @@ import { Constants } from '../../Constants';
 
 @Component({
   selector: 'app-about-us',
-  templateUrl: './about-us.component.html',
-  styleUrls: ['./about-us.component.scss']
+  templateUrl: './artists.component.html',
+  styleUrls: ['./artists.component.scss']
 })
-export class AboutUsComponent implements OnInit {
+export class ArtistsComponent implements OnInit {
 
   constructor(private http: HttpServicesService) { }
 

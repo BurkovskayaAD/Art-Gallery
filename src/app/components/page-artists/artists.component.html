@@ -1,0 +1,20 @@
+<div class="about-us">
+
+  <div class="main-photo pt-0 pb-2">
+    <img src="../../../assets/112.jpg" class="photo-style w-100">
+    <h1 class="big-text-photo">ARTISTS</h1>
+  </div>
+
+
+
+
+  <div  class="block-aboutUs-artist py-5">
+    <div class="row">
+        <div *ngFor="let item of artist" class="col-md h-500">
+        <img src="http://localhost:3010/images/{{item.photo}}" alt="gogh" class="artist-photo">
+        <div class="painter">{{item.name}} | {{item.occupation}}</div>
+      </div>
+    </div>
+  </div>
+
+</div>

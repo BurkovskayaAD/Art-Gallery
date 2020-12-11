@@ -51,39 +51,17 @@
 
 }
 
-.block-aboutUs{
-  margin-right: 0;
+.artist-photo-block{
+  text-align: center;
 }
-.text-aboutUs{
-  padding: 0;
-  background-color: #f1f1f1;
-  min-height: 300px;
-  margin-right: 0;
-  font-family: 'Poppins', sans-serif;
-
-}
-.big-text{
-  color: black;
-  font-size: 60px;
+.big-aboutUs{
   font-weight: 700;
-  font-family: 'Poppins', sans-serif;
-
-
-}
-.small-text{
-  font-size: 14px;
-  color: #9b9b9b;
-  font-family: 'Poppins', sans-serif;
-
-}
-.color-or{
-  color: lightblue;
-  display: inline-block;
-}
-.color-bl{
   color: #151515;
-  display: inline-block;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
 }
+
+
 .sec{
   padding-left: 10px;
 }
@@ -92,7 +70,7 @@
   border-bottom: 1px solid #f1f1f1;
 }
 .line-separator-name{
-  font-size: 36px;
+  font-size: 25px;
   color: #151515;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
@@ -115,14 +93,14 @@
 
 .type-picture{
   width: 80%;
-  font-size: 24px;
+  font-size: 20px;
   color: #151515;
   font-weight: 500;
   display: inline-block;
 }
 
 .price{
-  font-size: 24px;
+  font-size: 20px;
   color: #151515;
   font-weight: 500;
   display: inline-block;

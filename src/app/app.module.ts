@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { HeaderGalleryComponent } from './components/header/header-gallery.component';
 import { FooterGalleryComponent } from './components/footer/footer-gallery.component';
 import { MainGalleryComponent } from './components/page-main/main-gallery.component';
-import { AboutUsComponent } from './components/page-about/about-us.component';
+import { ArtistsComponent } from './components/page-artists/artists.component';
 import { ExhibitionsComponent } from './components/page-exhibitions/exhibitions.component';
 import { GalleryComponent } from './components/page-gallery/gallery.component';
 import { ContactsComponent } from './components/page-contacts/contacts.component';
@@ -18,7 +18,7 @@ import {HttpServicesService} from './services/http-services.service';
 
 const appRoutes: Routes = [
   {path: '', component: MainGalleryComponent},
-  {path: 'about', component: AboutUsComponent},
+  {path: 'artists', component: ArtistsComponent},
   {path: 'exhibitions', component: ExhibitionsComponent},
   {path: 'gallery', component: GalleryComponent},
   {path: 'contacts', component: ContactsComponent}
@@ -30,7 +30,7 @@ const appRoutes: Routes = [
     HeaderGalleryComponent,
     FooterGalleryComponent,
     MainGalleryComponent,
-    AboutUsComponent,
+    ArtistsComponent,
     ExhibitionsComponent,
     GalleryComponent,
     ContactsComponent,
