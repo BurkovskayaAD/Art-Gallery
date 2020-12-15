@@ -15,13 +15,17 @@ import { ContactsComponent } from './components/page-contacts/contacts.component
 import { GalleryInMainComponent } from './components/page-main-gallery/gallery-in-main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {HttpServicesService} from './services/http-services.service';
+import { PageRegistrationComponent } from './components/page-registration/page-registration.component';
+import { PageRegistrationFormComponent } from './components/page-registration-form/page-registration-form.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 const appRoutes: Routes = [
   {path: '', component: MainGalleryComponent},
   {path: 'artists', component: ArtistsComponent},
   {path: 'exhibitions', component: ExhibitionsComponent},
   {path: 'gallery', component: GalleryComponent},
-  {path: 'contacts', component: ContactsComponent}
+  {path: 'contacts', component: ContactsComponent},
+  {path: 'registration', component: PageRegistrationComponent}
 ];
 
 @NgModule({
@@ -34,14 +38,17 @@ const appRoutes: Routes = [
     ExhibitionsComponent,
     GalleryComponent,
     ContactsComponent,
-    GalleryInMainComponent
+    GalleryInMainComponent,
+    PageRegistrationComponent,
+    PageRegistrationFormComponent
   ],
   imports: [
     BrowserModule,
     MatGridListModule,
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [HttpServicesService],
   bootstrap: [AppComponent]

@@ -1,0 +1,51 @@
+<div class="registration-page">
+  <div class="registration-block">
+
+    <form id="regForm" [formGroup]="addNewUser" class="registration-form" novalidate>
+
+      <div class="input-block">Name</div>
+      <input type="text" name="name" formControlName="name">
+
+      <div class="alert alert-danger my-alert" *ngIf="addNewUser.controls['name'].invalid && addNewUser.controls['name'].touched">
+        Please enter your name
+      </div>
+
+      <div class="input-block">Surname</div>
+      <input type="text" name="surname" formControlName="surname">
+
+      <div class="alert alert-danger my-alert" *ngIf="addNewUser.controls['surname'].invalid && addNewUser.controls['surname'].touched">
+        Please enter your surname
+      </div>
+
+      <div class="input-block">Telephone number</div>
+      <input type="text" name="telephone" formControlName="telephone">
+
+      <div class="alert alert-danger my-alert" *ngIf="addNewUser.controls['telephone'].invalid && addNewUser.controls['telephone'].touched">
+        Please enter your telephone number
+      </div>
+
+      <div class="input-block">Email</div>
+      <input type="text" name="email" formControlName="email">
+
+      <div class="alert alert-danger my-alert" *ngIf="addNewUser.controls['email'].invalid && addNewUser.controls['email'].touched">
+        Please enter your email
+      </div>
+
+      <div class="input-block">Password</div>
+      <input type="text" name="password" formControlName="password">
+
+      <div class="alert alert-danger my-alert" *ngIf="addNewUser.controls['password'].invalid && addNewUser.controls['password'].touched">
+        Please enter password
+      </div>
+
+      <div class="input-block">Repeat password</div>
+      <input type="text" name="passwordRepeat" formControlName="passwordRepeat">
+
+      <div class="alert alert-danger my-alert" *ngIf="addNewUser.controls['passwordRepeat'].invalid && addNewUser.controls['passwordRepeat'].touched">
+        Please repeat password
+      </div>
+
+    </form>
+  </div>
+
+</div>
