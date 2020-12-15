@@ -17,8 +17,7 @@ export class PageRegistrationFormComponent implements OnInit {
     surname: ['', Validators.required],
     telephone: ['', Validators.required],
     email: ['', Validators.required],
-    password: ['', Validators.required],
-    passwordRepeat: ['', Validators.required]
+    password: ['', Validators.required]
   });
 
   @Output() addNewOutput = new EventEmitter();
