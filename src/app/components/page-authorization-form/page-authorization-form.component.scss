@@ -1,4 +1,4 @@
-.registration-page{
+.authorization-page{
   width: 100%;
   height: 100%;
   background-color: #f1f1f1;
@@ -6,7 +6,7 @@
   top: 0;
   z-index: 2000;
 }
-.registration-block{
+.authorization-block{
   z-index: 2001;
   display: flex;
   vertical-align: middle;
@@ -14,7 +14,7 @@
   padding-top: 100px;
   font-family: 'Montserrat', sans-serif;
 }
-.registration-form{
+.authorization-form{
   width: 70%;
   background-color: white;
   padding: 40px;
@@ -56,24 +56,8 @@ input{
   margin: 0 40px;
 }
 
-.alert{
-  height: 20px;
-  margin: 0;
-  padding: 0;
-  border-radius: 1px;
-}
 
-.my-alert{
-  display: flex;
-  justify-content: center;
-  vertical-align: middle;
-  width: 70%;
-  font-size: 11px;
-  margin-left: 150px;
-  margin-bottom: 10px;
-}
-
-.registration-text{
+.authorization-text{
   width: 100%;
   text-align: center;
   padding-bottom: 40px;
@@ -82,17 +66,13 @@ input{
 }
 
 @media (max-width: 828px) {
-  .registration-page{
+  .authorization-page{
     height: 163%;
   }
-  .registration-form{
+  .authorization-form{
     width: 90%;
   }
   input{
     width: 100%;
-  }
-  .my-alert{
-    width: 100%;
-    margin-left: 0;
   }
 }

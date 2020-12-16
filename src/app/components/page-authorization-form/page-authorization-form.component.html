@@ -1,0 +1,26 @@
+<div class="authorization-page">
+  <div class="authorization-block">
+
+    <form id="autForm" [formGroup]="authorizationUser" class="authorization-form" novalidate>
+
+      <div class="authorization-text">Authorization</div>
+
+      <div class="input-block">
+        <label class="text-form">Email</label>
+        <input type="email" name="email" formControlName="email">
+      </div>
+
+      <div class="input-block">
+        <label class="text-form">Password</label>
+        <input type="password" name="password" formControlName="password">
+      </div>
+
+      <div class="button-block px-5 mt-2">
+        <button class="button-form" type="submit" [disabled]="!authorizationUser.valid">Sign in</button>
+        <button class="button-form" type="button" routerLink="/">Back</button>
+      </div>
+
+    </form>
+  </div>
+
+</div>

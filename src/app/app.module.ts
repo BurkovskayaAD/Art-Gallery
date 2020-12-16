@@ -18,6 +18,8 @@ import {HttpServicesService} from './services/http-services.service';
 import { PageRegistrationComponent } from './components/page-registration/page-registration.component';
 import { PageRegistrationFormComponent } from './components/page-registration-form/page-registration-form.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { PageAuthorizationComponent } from './components/page-authorization/page-authorization.component';
+import { PageAuthorizationFormComponent } from './components/page-authorization-form/page-authorization-form.component';
 
 const appRoutes: Routes = [
   {path: '', component: MainGalleryComponent},
@@ -25,7 +27,8 @@ const appRoutes: Routes = [
   {path: 'exhibitions', component: ExhibitionsComponent},
   {path: 'gallery', component: GalleryComponent},
   {path: 'contacts', component: ContactsComponent},
-  {path: 'registration', component: PageRegistrationComponent}
+  {path: 'registration', component: PageRegistrationComponent},
+  {path: 'authorization', component: PageAuthorizationComponent}
 ];
 
 @NgModule({
@@ -40,7 +43,9 @@ const appRoutes: Routes = [
     ContactsComponent,
     GalleryInMainComponent,
     PageRegistrationComponent,
-    PageRegistrationFormComponent
+    PageRegistrationFormComponent,
+    PageAuthorizationComponent,
+    PageAuthorizationFormComponent
   ],
   imports: [
     BrowserModule,
