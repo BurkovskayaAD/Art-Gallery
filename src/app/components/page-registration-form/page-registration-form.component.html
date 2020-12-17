@@ -1,7 +1,7 @@
 <div class="registration-page">
   <div class="registration-block">
 
-    <form id="regForm" [formGroup]="addNewUser" class="registration-form" novalidate>
+    <form id="regForm" [formGroup]="addNewUser" class="registration-form" (ngSubmit)="onSubmit()" novalidate>
 
       <div class="registration-text">Registration</div>
 
@@ -43,7 +43,7 @@
 
       <div class="input-block">
         <label class="text-form">Password</label>
-        <input type="password" name="password" formControlName="password">
+        <input type="password" name="password" (change)="onChange($event)" formControlName="password">
 
         <div class="alert alert-danger my-alert" *ngIf="addNewUser.controls['password'].invalid && addNewUser.controls['password'].touched">
           Please enter password
