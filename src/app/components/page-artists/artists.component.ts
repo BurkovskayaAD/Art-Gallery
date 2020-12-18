@@ -22,7 +22,7 @@ export class ArtistsComponent implements OnInit {
   }
 
   onSelect(artist): void{
-    this.router.navigate(['/artists', artist._id]);
+    console.log(this.artist);
   }
 
 }
