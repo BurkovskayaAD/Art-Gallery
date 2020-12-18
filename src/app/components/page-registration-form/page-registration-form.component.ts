@@ -1,7 +1,7 @@
 import {Component, OnInit, Output} from '@angular/core';
 import {EventEmitter} from '@angular/core';
 import {FormBuilder, Validators} from '@angular/forms';
-import {md5} from 'md5';
+// import {md5} from 'md5';
 
 
 @Component({
@@ -28,13 +28,13 @@ export class PageRegistrationFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  //????????????????
-  onChange($event: Event): void {
-    const pass = ($event.target as HTMLDataElement);
-    console.log(pass);
-    const hash = md5(pass);
-    console.log(hash);
-  }
+  // ????????????????
+  // onChange($event: Event): void {
+  //   const pass = ($event.target as HTMLDataElement);
+  //   console.log(pass);
+  //   const hash = md5(pass);
+  //   console.log(hash);
+  // }
 
   onSubmit(): void{
     this.addNewOutput.emit(this.addNewUser.value);

@@ -20,6 +20,7 @@ import { PageRegistrationFormComponent } from './components/page-registration-fo
 import {ReactiveFormsModule} from '@angular/forms';
 import { PageAuthorizationComponent } from './components/page-authorization/page-authorization.component';
 import { PageAuthorizationFormComponent } from './components/page-authorization-form/page-authorization-form.component';
+import { PageArtistsInfoComponent } from './components/page-artists-info/page-artists-info.component';
 
 const appRoutes: Routes = [
   {path: '', component: MainGalleryComponent},
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
   {path: 'gallery', component: GalleryComponent},
   {path: 'contacts', component: ContactsComponent},
   {path: 'registration', component: PageRegistrationComponent},
-  {path: 'authorization', component: PageAuthorizationComponent}
+  {path: 'authorization', component: PageAuthorizationComponent},
+  {path: 'artists/:id', component: PageArtistsInfoComponent}
 ];
 
 @NgModule({
@@ -45,7 +47,8 @@ const appRoutes: Routes = [
     PageRegistrationComponent,
     PageRegistrationFormComponent,
     PageAuthorizationComponent,
-    PageAuthorizationFormComponent
+    PageAuthorizationFormComponent,
+    PageArtistsInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +56,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [HttpServicesService],
   bootstrap: [AppComponent]
