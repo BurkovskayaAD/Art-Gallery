@@ -7,9 +7,15 @@
         <img src="http://localhost:3010/images/{{item.picture}}" alt="paint" class="article-img article-huge">
       </div>
       <div *ngIf="!item.huge">
-        <img src="http://localhost:3010/images/{{item.url1}}" alt="paint" class="article-img article-small">
-        <img src="http://localhost:3010/images/{{item.url2}}" alt="paint" class="article-img article-small">
-      </div>
+        <div *ngFor="let itemm of list[1]">
+          <div *ngIf="itemm.url1">
+            <img src="http://localhost:3010/images/{{itemm.url1}}" alt="paint" class="article-img article-small">
+          </div>
+          <div *ngIf="itemm.url2">
+            <img src="http://localhost:3010/images/{{itemm.url2}}" alt="paint" class="article-img article-small">
+          </div>
+          </div>
+        </div>
 
     </div>
   </div>

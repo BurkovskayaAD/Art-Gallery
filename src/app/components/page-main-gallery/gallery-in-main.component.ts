@@ -40,10 +40,12 @@ export class GalleryInMainComponent implements OnInit {
           [this.painting[4]]
         ];
 
+
         this.list[1].huge = false;
         this.list[3].huge = false;
 
         console.log(this.list);
+
 
         // this.list = [
         //   {huge: true, url: 'assets/14.jpg'},
