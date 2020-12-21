@@ -1,1 +1,25 @@
-<p>page-artists-info works!</p>
+<a class="back" routerLink="/artists">← Back</a>
+<div *ngIf="artistInfo" class="row pb-5 artist-info-block">
+  <div class="col-lg-1"></div>
+  <div class="col-lg py-2 px-5 photo-block">
+    <img src="http://localhost:3010/images/{{artistInfo.photo}}" alt="photo" class="photo">
+  </div>
+  <div class="col-lg py-2 px-5 text-block">
+    <div class="text-info">Name: </div>
+    <div class="answer-info">{{artistInfo.name}}</div>
+
+    <div class="text-info">Type: </div>
+    <div class="answer-info">{{artistInfo.occupation}}</div>
+
+    <div class="text-info">Country: </div>
+    <div class="answer-info">{{artistInfo.country}}</div>
+
+    <div class="text-info">Date Birth: </div>
+    <div class="answer-info">{{artistInfo.dateBirth | date: 'longDate'}}</div>
+
+    <div class="text-info">Date Death: </div>
+    <div class="answer-info">{{artistInfo.dateDeath | date: 'longDate'}}</div>
+    <div *ngIf="artistInfo.dateDeath == null" class="answer-info">Alive</div>
+  </div>
+  <div class="col-lg-1"></div>
+</div>
