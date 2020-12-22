@@ -42,7 +42,11 @@
 .row{
   width: 100%;
 }
-
+.col-md{
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
 @media (max-width: 768px) {
   .cover{
     height: 500px;

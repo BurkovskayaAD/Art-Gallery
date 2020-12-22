@@ -1,32 +1,30 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpServicesService} from '../../services/http-services.service';
-import { Constants } from '../../Constants';
 import {ActivatedRoute} from '@angular/router';
 import {Subscription} from 'rxjs';
-import {HttpHeaders, HttpParams} from '@angular/common/http';
+import {Constants} from '../../Constants';
 
 @Component({
-  selector: 'app-page-artists-info',
-  templateUrl: './page-artists-info.component.html',
-  styleUrls: ['./page-artists-info.component.scss']
+  selector: 'app-page-gallery-info',
+  templateUrl: './page-gallery-info.component.html',
+  styleUrls: ['./page-gallery-info.component.scss']
 })
-export class PageArtistsInfoComponent implements OnInit {
+export class PageGalleryInfoComponent implements OnInit {
 
   constructor(private http: HttpServicesService, private route: ActivatedRoute) { }
 
   private routeSub: Subscription;
-  artistInfo;
+  paintingInfo;
 
   ngOnInit(): void {
     this.routeSub = this.route.params.subscribe(param => {
       console.log(param);
       const idd = String(param.id);
       console.log(idd);
-      this.http.get(Constants.artistsMoreInfoApiUrl + idd).subscribe(
-        (artistInfo) => {this.artistInfo = artistInfo; console.log(this.artistInfo); }
+      this.http.get(Constants.paintingsMoreInfoApiUrl + idd).subscribe(
+        (paintingInfo) => {this.paintingInfo = paintingInfo; console.log(this.paintingInfo); }
       );
     });
-
   }
 
 }

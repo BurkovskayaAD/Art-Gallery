@@ -10,7 +10,7 @@
 
   <div  class="block-aboutUs-artist py-5">
     <div class="row">
-        <div *ngFor="let item of artist" class="col-md h-500" [routerLink]="[item._id]" (click)="onSelect(item.artist)">
+        <div *ngFor="let item of artist" class="col-md h-500" [routerLink]="[item._id]">
           <img src="http://localhost:3010/images/{{item.photo}}" alt="gogh" class="artist-photo">
         <div class="painter">{{item.name}} | {{item.occupation}}</div>
       </div>

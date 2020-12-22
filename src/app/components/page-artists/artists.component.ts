@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpServicesService} from '../../services/http-services.service';
 import { Constants } from '../../Constants';
-import { Router } from '@angular/router';
 
 
 @Component({
@@ -11,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class ArtistsComponent implements OnInit {
 
-  constructor(private http: HttpServicesService, private router: Router) { }
+  constructor(private http: HttpServicesService) { }
 
   artist;
 
@@ -19,10 +18,6 @@ export class ArtistsComponent implements OnInit {
     this.http.get(Constants.artistsApiUrl).subscribe(
       (artist) => {this.artist = artist; console.log(this.artist); }
     );
-  }
-
-  onSelect(artist): void{
-    console.log(this.artist);
   }
 
 }
