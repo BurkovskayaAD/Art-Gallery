@@ -4,6 +4,10 @@ import {RouterModule, Routes} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import {MatGridListModule} from '@angular/material/grid-list';
 
+import {SocialAuthServiceConfig} from 'angularx-social-login';
+import {GoogleLoginProvider, SocialLoginModule} from 'angularx-social-login';
+
+
 import { AppComponent } from './app.component';
 import { HeaderGalleryComponent } from './components/header/header-gallery.component';
 import { FooterGalleryComponent } from './components/footer/footer-gallery.component';
@@ -60,8 +64,22 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    SocialLoginModule
   ],
-  providers: [HttpServicesService],
+  providers: [HttpServicesService,
+              {
+                provide: 'SocialAuthServiceConfig',
+                useValue: {
+                  providers: [
+                    {
+                      id: GoogleLoginProvider.PROVIDER_ID,
+                      provider: new GoogleLoginProvider('361818030975-5vcq7q4ocpnlucmpm07vvq3h9l472och.apps.googleusercontent.com')
+                    }
+                  ]
+                }
+              }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
