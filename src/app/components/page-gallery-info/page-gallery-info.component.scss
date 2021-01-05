@@ -1,4 +1,4 @@
-.back{
+.back {
   display: inline-block;
   outline: none;
   padding: 20px 40px;
@@ -6,27 +6,32 @@
   font-family: 'Roboto', sans-serif;
   color: #4a4a4a;
 }
-.col-md{
+
+.col-md {
   padding: 0;
 }
-.painting-info-block{
+
+.painting-info-block {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.photo{
+.photo {
   width: 100%;
 }
-.text-block{
+
+.text-block {
 }
-.text-info{
+
+.text-info {
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
-  color: #add8e6!important;
+  color: #add8e6 !important;
   padding: 10px 0;
 }
-.answer-info{
+
+.answer-info {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   /*font-weight: bold;*/

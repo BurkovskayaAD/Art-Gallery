@@ -1,4 +1,4 @@
-.authorization-page{
+.authorization-page {
   width: 100%;
   height: 100%;
   background-color: #f1f1f1;
@@ -6,7 +6,8 @@
   top: 0;
   z-index: 2000;
 }
-.authorization-block{
+
+.authorization-block {
   z-index: 2001;
   display: flex;
   vertical-align: middle;
@@ -14,15 +15,16 @@
   padding-top: 100px;
   font-family: 'Montserrat', sans-serif;
 }
-.authorization-form{
+
+.authorization-form {
   width: 70%;
   background-color: white;
   padding: 40px;
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
   border-radius: 1px;
 }
 
-input{
+input {
   font-size: 13px;
   padding: 2px;
   background-color: #f1f1f1;
@@ -34,19 +36,19 @@ input{
   outline-width: 1px;
 }
 
-.text-form{
+.text-form {
   font-size: 13px;
   padding-top: 5px;
   min-width: 150px;
 }
 
-.button-block{
+.button-block {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.button-form{
+.button-form {
   width: 100px;
   text-decoration: none;
   padding: 5px 0;
@@ -57,7 +59,7 @@ input{
 }
 
 
-.authorization-text{
+.authorization-text {
   width: 100%;
   text-align: center;
   padding-bottom: 40px;
@@ -66,13 +68,13 @@ input{
 }
 
 @media (max-width: 828px) {
-  .authorization-page{
+  .authorization-page {
     height: 163%;
   }
-  .authorization-form{
+  .authorization-form {
     width: 90%;
   }
-  input{
+  input {
     width: 100%;
   }
 }

@@ -1,19 +1,20 @@
-.contacts{
+.contacts {
   font-family: 'Poppins', sans-serif;
 }
 
-.main-photo{
+.main-photo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.photo-style{
+.photo-style {
   object-fit: cover;
   height: 300px;
   position: relative;
 }
-.big-text-photo{
+
+.big-text-photo {
   color: white;
   position: absolute;
   font-weight: bold;
@@ -23,49 +24,51 @@
 
 }
 
-.big-textContacts{
+.big-textContacts {
   font-size: 40px;
   color: #151515;
   font-weight: bold;
   text-align: center;
 }
-.small-textContacts{
+
+.small-textContacts {
   font-size: 14px;
   color: #848484;
   text-align: center;
 }
-.button-style{
+
+.button-style {
   background-color: #af9f7b;
   color: white;
 }
 
-.big-text-social{
+.big-text-social {
   font-size: 16px;
   font-weight: bold;
   padding-bottom: 15px;
   border-bottom: 1px solid lightblue;
 }
 
-.small-text-social{
+.small-text-social {
   display: block;
   padding: 5px 0;
   color: #363d41;
 }
 
-.last{
+.last {
   padding-bottom: 30px;
 }
 
-.contact-photo{
+.contact-photo {
   width: 100%;
 }
 
-.row{
+.row {
   width: 100%;
 }
 
 @media (max-width: 767px) {
-  .big-text-photo{
+  .big-text-photo {
     font-size: 50px;
   }
 }

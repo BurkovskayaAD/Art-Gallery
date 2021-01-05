@@ -1,6 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpServicesService} from '../../services/http-services.service';
-import { Router } from '@angular/router';
+import {Router} from '@angular/router';
 import {Constants} from '../../Constants';
 
 @Component({
@@ -11,7 +11,8 @@ import {Constants} from '../../Constants';
 export class PageRegistrationComponent implements OnInit {
 
 
-  constructor(private http: HttpServicesService, private router: Router) { }
+  constructor(private http: HttpServicesService, private router: Router) {
+  }
 
   ngOnInit(): void {
   }

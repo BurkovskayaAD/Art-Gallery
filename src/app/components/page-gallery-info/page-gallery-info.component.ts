@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpServicesService} from '../../services/http-services.service';
 import {ActivatedRoute} from '@angular/router';
 import {Subscription} from 'rxjs';
@@ -11,7 +11,8 @@ import {Constants} from '../../Constants';
 })
 export class PageGalleryInfoComponent implements OnInit {
 
-  constructor(private http: HttpServicesService, private route: ActivatedRoute) { }
+  constructor(private http: HttpServicesService, private route: ActivatedRoute) {
+  }
 
   private routeSub: Subscription;
   paintingInfo;
@@ -22,7 +23,10 @@ export class PageGalleryInfoComponent implements OnInit {
       const idd = String(param.id);
       console.log(idd);
       this.http.get(Constants.paintingsMoreInfoApiUrl + idd).subscribe(
-        (paintingInfo) => {this.paintingInfo = paintingInfo; console.log(this.paintingInfo); }
+        (paintingInfo) => {
+          this.paintingInfo = paintingInfo;
+          console.log(this.paintingInfo);
+        }
       );
     });
   }

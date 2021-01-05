@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable, of} from 'rxjs';
 import {catchError} from 'rxjs/operators';
@@ -8,7 +8,8 @@ import {catchError} from 'rxjs/operators';
 })
 export class HttpServicesService {
 
-  constructor( private http: HttpClient ) { }
+  constructor(private http: HttpClient) {
+  }
 
   get(url: string, params?: any): Observable<any> {
     return this.http.get(url, params).pipe(
@@ -21,6 +22,7 @@ export class HttpServicesService {
       })
     );
   }
+
   post(url: string, payload: any, params?: any): Observable<any> {
     return this.http.post(url, payload, params).pipe(
       catchError((err) => {

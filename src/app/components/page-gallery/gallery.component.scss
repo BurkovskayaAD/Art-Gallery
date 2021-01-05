@@ -1,19 +1,20 @@
-.gallery{
+.gallery {
   font-family: 'Poppins', sans-serif;
 }
 
-.main-photo{
+.main-photo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.photo-style{
+.photo-style {
   object-fit: cover;
   height: 300px;
   position: relative;
 }
-.big-text-photo{
+
+.big-text-photo {
   color: white;
   position: absolute;
   font-weight: bold;
@@ -23,7 +24,7 @@
 
 }
 
-.paint{
+.paint {
   object-fit: cover;
   height: 400px;
   width: 360px;
@@ -33,27 +34,30 @@
   margin-left: auto;
 }
 
-.name-paint{
+.name-paint {
   font-size: 20px;
   color: #151515;
   text-align: center;
 }
 
-.row{
+.row {
   width: 100%;
 }
-.col-md{
+
+.col-md {
   text-decoration: none;
   cursor: pointer;
   outline: none;
 }
+
 @media (max-width: 768px) {
-  .cover{
+  .cover {
     height: 500px;
   }
 }
+
 @media (max-width: 767px) {
-  .big-text-photo{
+  .big-text-photo {
     font-size: 50px;
   }
 }

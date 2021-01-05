@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpServicesService} from '../../services/http-services.service';
-import { Constants } from '../../Constants';
+import {Constants} from '../../Constants';
 
 @Component({
   selector: 'app-exhibitions',
@@ -9,13 +9,17 @@ import { Constants } from '../../Constants';
 })
 export class ExhibitionsComponent implements OnInit {
 
-  constructor(private http: HttpServicesService) { }
+  constructor(private http: HttpServicesService) {
+  }
 
   exhibition;
 
   ngOnInit(): void {
     this.http.get(Constants.exhibitionsApiUrl).subscribe(
-      (exhibition) => {this.exhibition = exhibition; console.log(this.exhibition); }
+      (exhibition) => {
+        this.exhibition = exhibition;
+        console.log(this.exhibition);
+      }
     );
   }
 

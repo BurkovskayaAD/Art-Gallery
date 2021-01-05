@@ -1,9 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpServicesService} from '../../services/http-services.service';
-import { Constants } from '../../Constants';
+import {Constants} from '../../Constants';
 import {ActivatedRoute} from '@angular/router';
 import {Subscription} from 'rxjs';
-import {HttpHeaders, HttpParams} from '@angular/common/http';
 
 @Component({
   selector: 'app-page-artists-info',
@@ -12,7 +11,8 @@ import {HttpHeaders, HttpParams} from '@angular/common/http';
 })
 export class PageArtistsInfoComponent implements OnInit {
 
-  constructor(private http: HttpServicesService, private route: ActivatedRoute) { }
+  constructor(private http: HttpServicesService, private route: ActivatedRoute) {
+  }
 
   private routeSub: Subscription;
   artistInfo;
@@ -23,7 +23,10 @@ export class PageArtistsInfoComponent implements OnInit {
       const idd = String(param.id);
       console.log(idd);
       this.http.get(Constants.artistsMoreInfoApiUrl + idd).subscribe(
-        (artistInfo) => {this.artistInfo = artistInfo; console.log(this.artistInfo); }
+        (artistInfo) => {
+          this.artistInfo = artistInfo;
+          console.log(this.artistInfo);
+        }
       );
     });
 

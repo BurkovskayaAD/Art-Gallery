@@ -1,6 +1,7 @@
 import {Component, OnInit, Output} from '@angular/core';
 import {EventEmitter} from '@angular/core';
 import {FormBuilder, Validators} from '@angular/forms';
+
 // import {md5} from 'md5';
 
 
@@ -36,7 +37,7 @@ export class PageRegistrationFormComponent implements OnInit {
   //   console.log(hash);
   // }
 
-  onSubmit(): void{
+  onSubmit(): void {
     this.addNewOutput.emit(this.addNewUser.value);
     console.log(this.addNewUser.value);
   }

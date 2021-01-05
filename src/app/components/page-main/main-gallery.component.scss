@@ -1,12 +1,12 @@
-.main-gallery{
+.main-gallery {
   font-family: 'Poppins', sans-serif;
 }
 
-.row{
+.row {
   width: 100%;
 }
 
-.main-gallery-photo{
+.main-gallery-photo {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
   padding-right: 10%;
 }
 
-.big-main-photo{
+.big-main-photo {
   height: 500px;
   object-fit: cover;
   position: absolute;
@@ -29,7 +29,7 @@
   z-index: -10;
 }
 
-.big-main-text{
+.big-main-text {
   color: white;
   font-size: 100px;
   font-weight: bold;
@@ -37,7 +37,8 @@
   font-family: 'Poppins', sans-serif;
 
 }
-.small-main-text{
+
+.small-main-text {
   color: white;
   font-size: 50px;
   font-weight: bold;
@@ -45,7 +46,8 @@
   font-family: 'Poppins', sans-serif;
 
 }
-.button-main{
+
+.button-main {
   background-color: lightblue;
   color: white;
   font-size: 18px;
@@ -54,10 +56,11 @@
 
 }
 
-.artist-photo-block{
+.artist-photo-block {
   text-align: center;
 }
-.big-aboutUs{
+
+.big-aboutUs {
   font-weight: 700;
   color: #151515;
   font-size: 25px;
@@ -65,36 +68,38 @@
 }
 
 
-.sec{
+.sec {
   padding-left: 10px;
 }
 
-.line-separator{
+.line-separator {
   border-bottom: 1px solid #f1f1f1;
 }
-.line-separator-name{
+
+.line-separator-name {
   font-size: 25px;
   color: #151515;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
 }
-.line-separators-text{
+
+.line-separators-text {
   font-size: 18px;
   color: #151515;
   font-family: 'Poppins', sans-serif;
 }
 
-.works-name{
+.works-name {
   font-size: 24px;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
 }
 
-.bc-pricesTestimonials{
+.bc-pricesTestimonials {
   background-color: #f1f1f1;
 }
 
-.type-picture{
+.type-picture {
   width: 80%;
   font-size: 20px;
   color: #151515;
@@ -102,7 +107,7 @@
   display: inline-block;
 }
 
-.price{
+.price {
   font-size: 20px;
   color: #151515;
   font-weight: 500;
@@ -110,12 +115,12 @@
   float: right;
 }
 
-.about-picture{
+.about-picture {
   font-size: 14px;
   color: #848484;
 }
 
-.main-testimonial{
+.main-testimonial {
   line-height: 1.4;
   font-size: 24px;
   color: #151515;
@@ -124,52 +129,52 @@
   width: 65%;
 }
 
-.second-testimonial{
+.second-testimonial {
   color: #848484;
   font-size: 14px;
 }
 
 @media (max-width: 600px) {
-  .main-testimonial{
+  .main-testimonial {
     width: 50%;
   }
 }
 
 @media (max-width: 950px) {
-  .main-gallery-photo{
+  .main-gallery-photo {
     height: 300px;
     padding: 0;
   }
-  .big-main-photo{
+  .big-main-photo {
     height: 300px;
   }
-  .big-main-text{
+  .big-main-text {
     font-size: 60px;
   }
-  .small-main-text{
+  .small-main-text {
     font-size: 30px;
   }
-  .button-main{
+  .button-main {
     font-size: 20px;
   }
 }
 
 @media (max-width: 767px) {
-  .main-gallery-photo{
+  .main-gallery-photo {
     height: 300px;
     padding: 0;
   }
-  .big-main-photo{
+  .big-main-photo {
     height: 300px;
   }
 
 }
 
 @media (max-width: 550px) {
-  .main-gallery-photo{
+  .main-gallery-photo {
     height: 400px;
   }
-  .big-main-photo{
+  .big-main-photo {
     height: 400px;
   }
 

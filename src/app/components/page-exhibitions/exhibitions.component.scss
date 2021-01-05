@@ -1,19 +1,20 @@
-.exhibitions{
+.exhibitions {
   font-family: 'Poppins', sans-serif;
 }
 
-.main-photo{
+.main-photo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.photo-style{
+.photo-style {
   object-fit: cover;
   height: 300px;
   position: relative;
 }
-.big-text-photo{
+
+.big-text-photo {
   color: white;
   position: absolute;
   font-weight: bold;
@@ -23,35 +24,35 @@
 
 }
 
-.main-text-exhibition{
+.main-text-exhibition {
   color: lightblue;
   font-size: 20px;
   padding: 10px 0;
 }
 
-.name-exhibition{
+.name-exhibition {
   color: #151515;
   font-size: 20px;
   font-weight: bold;
 }
 
-.date-exhibition{
+.date-exhibition {
   color: #151515;
   font-size: 20px;
   font-weight: bold;
 }
 
-.about-exhibition{
+.about-exhibition {
   color: #151515;
   font-size: 14px;
 }
 
-.row{
+.row {
   width: 100%;
 }
 
 @media (max-width: 767px) {
-  .big-text-photo{
+  .big-text-photo {
     font-size: 50px;
   }
 }

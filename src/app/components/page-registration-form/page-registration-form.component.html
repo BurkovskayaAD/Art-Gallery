@@ -9,7 +9,8 @@
         <label class="text-form">Name</label>
         <input type="text" name="name" formControlName="name">
 
-        <div class="alert alert-danger my-alert" *ngIf="addNewUser.controls['name'].invalid && addNewUser.controls['name'].touched">
+        <div class="alert alert-danger my-alert"
+             *ngIf="addNewUser.controls['name'].invalid && addNewUser.controls['name'].touched">
           Please enter your name
         </div>
       </div>
@@ -18,7 +19,8 @@
         <label class="text-form">Surname</label>
         <input type="text" name="surname" formControlName="surname">
 
-        <div class="alert alert-danger my-alert" *ngIf="addNewUser.controls['surname'].invalid && addNewUser.controls['surname'].touched">
+        <div class="alert alert-danger my-alert"
+             *ngIf="addNewUser.controls['surname'].invalid && addNewUser.controls['surname'].touched">
           Please enter your surname
         </div>
       </div>
@@ -27,7 +29,8 @@
         <label class="text-form">Telephone number</label>
         <input type="text" name="telephone" formControlName="telephone">
 
-        <div class="alert alert-danger my-alert" *ngIf="addNewUser.controls['telephone'].invalid && addNewUser.controls['telephone'].touched">
+        <div class="alert alert-danger my-alert"
+             *ngIf="addNewUser.controls['telephone'].invalid && addNewUser.controls['telephone'].touched">
           Please enter your telephone number
         </div>
       </div>
@@ -36,7 +39,8 @@
         <label class="text-form">Email</label>
         <input type="email" name="email" formControlName="email">
 
-        <div class="alert alert-danger my-alert" *ngIf="addNewUser.controls['email'].invalid && addNewUser.controls['email'].touched">
+        <div class="alert alert-danger my-alert"
+             *ngIf="addNewUser.controls['email'].invalid && addNewUser.controls['email'].touched">
           Please enter your email
         </div>
       </div>
@@ -45,7 +49,8 @@
         <label class="text-form">Password</label>
         <input type="password" name="password" formControlName="password">
 
-        <div class="alert alert-danger my-alert" *ngIf="addNewUser.controls['password'].invalid && addNewUser.controls['password'].touched">
+        <div class="alert alert-danger my-alert"
+             *ngIf="addNewUser.controls['password'].invalid && addNewUser.controls['password'].touched">
           Please enter password
         </div>
       </div>

@@ -11,7 +11,8 @@ export class PageAuthorizationFormComponent implements OnInit {
 
   user: SocialUser;
 
-  constructor(private fb: FormBuilder, private authService: SocialAuthService) { }
+  constructor(private fb: FormBuilder, private authService: SocialAuthService) {
+  }
 
   authorizationUser = this.fb.group({
     email: ['', Validators.required],

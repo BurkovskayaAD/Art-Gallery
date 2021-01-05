@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
 import {HttpServicesService} from '../../services/http-services.service';
 import {Constants} from '../../Constants';
 

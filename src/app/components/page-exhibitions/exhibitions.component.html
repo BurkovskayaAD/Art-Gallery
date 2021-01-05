@@ -6,17 +6,17 @@
   </div>
 
   <div *ngFor="let item of exhibition" class="block-exhibition py-5">
-    <div  class="row">
+    <div class="row">
       <div class="col-lg-1"></div>
       <div class="col-lg px-5">
         <img src="http://localhost:3010/images/{{item.poster}}" alt="poster" class="poster px-5 w-100">
       </div>
       <div class="col-lg px-5 py-2">
-        <div class="main-text-exhibition">Name: </div>
+        <div class="main-text-exhibition">Name:</div>
         <div class="name-exhibition">{{item.name}}</div>
-        <div class="main-text-exhibition">Date: </div>
+        <div class="main-text-exhibition">Date:</div>
         <div class="date-exhibition">{{item.dateStart | date: 'longDate'}} - {{item.dateEnd | date: 'longDate'}}</div>
-        <div class="main-text-exhibition">About: </div>
+        <div class="main-text-exhibition">About:</div>
         <div class="about-exhibition">{{item.about}}</div>
       </div>
       <div class="col-lg-1"></div>

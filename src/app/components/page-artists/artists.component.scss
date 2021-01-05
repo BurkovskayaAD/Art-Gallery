@@ -1,23 +1,24 @@
-.about-us{
+.about-us {
   font-family: 'Poppins', sans-serif;
 }
 
-.row{
+.row {
   width: 100%;
 }
 
-.main-photo{
+.main-photo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.photo-style{
+.photo-style {
   object-fit: cover;
   height: 300px;
   position: relative;
 }
-.big-text-photo{
+
+.big-text-photo {
   color: white;
   position: absolute;
   font-weight: bold;
@@ -26,7 +27,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.artist-photo{
+.artist-photo {
   padding: 16px;
   object-fit: cover;
   text-align: center;
@@ -37,27 +38,27 @@
   display: block;
 }
 
-.painter{
+.painter {
   color: #151515;
   font-size: 20px;
   text-align: center;
 }
-.col-md{
+
+.col-md {
   text-decoration: none;
   cursor: pointer;
   outline: none;
 }
 
 
-
 @media (max-width: 500px) {
-  .artist-photo{
+  .artist-photo {
     width: 100%;
   }
 }
 
 @media (max-width: 767px) {
-  .big-text-photo{
+  .big-text-photo {
     font-size: 50px;
   }
 }

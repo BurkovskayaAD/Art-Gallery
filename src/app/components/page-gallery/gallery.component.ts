@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpServicesService} from '../../services/http-services.service';
-import { Constants } from '../../Constants';
+import {Constants} from '../../Constants';
 
 
 @Component({
@@ -10,13 +10,17 @@ import { Constants } from '../../Constants';
 })
 export class GalleryComponent implements OnInit {
 
-  constructor(private http: HttpServicesService) { }
+  constructor(private http: HttpServicesService) {
+  }
 
   painting;
 
   ngOnInit(): void {
     this.http.get(Constants.paintingsApiUrl).subscribe(
-      (painting) => {this.painting = painting; console.log(this.painting); }
+      (painting) => {
+        this.painting = painting;
+        console.log(this.painting);
+      }
     );
   }
 
