@@ -19,13 +19,10 @@ export class PageArtistsInfoComponent implements OnInit {
 
   ngOnInit(): void {
     this.routeSub = this.route.params.subscribe(param => {
-      console.log(param);
       const idd = String(param.id);
-      console.log(idd);
       this.http.get(Constants.artistsMoreInfoApiUrl + idd).subscribe(
         (artistInfo) => {
           this.artistInfo = artistInfo;
-          console.log(this.artistInfo);
         }
       );
     });

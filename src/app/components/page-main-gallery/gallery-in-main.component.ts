@@ -23,7 +23,6 @@ export class GalleryInMainComponent implements OnInit {
     this.http.get(Constants.paintingsApiUrl).subscribe(
       (painting) => {
         this.painting = painting;
-        console.log(this.painting);
 
         this.painting[0].huge = true;
         this.painting[3].huge = true;
@@ -42,24 +41,6 @@ export class GalleryInMainComponent implements OnInit {
 
         this.list[1].huge = false;
         this.list[3].huge = false;
-
-        console.log(this.list);
-
-
-        // this.list = [
-        //   {huge: true, url: 'assets/14.jpg'},
-        //   {
-        //     huge: false, url: {
-        //       url1: 'assets/10.jpeg', url2: 'assets/11.jpeg'
-        //     }
-        //   },
-        //   {huge: true, url: 'assets/13.jpg'},
-        //   {
-        //     huge: false, url: {
-        //       url1: 'assets/5.jpg', url2: 'assets/7.jpg'
-        //     }
-        //   },
-        // ];
       }
     );
   }

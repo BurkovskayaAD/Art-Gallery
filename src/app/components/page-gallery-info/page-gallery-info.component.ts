@@ -19,13 +19,10 @@ export class PageGalleryInfoComponent implements OnInit {
 
   ngOnInit(): void {
     this.routeSub = this.route.params.subscribe(param => {
-      console.log(param);
       const idd = String(param.id);
-      console.log(idd);
       this.http.get(Constants.paintingsMoreInfoApiUrl + idd).subscribe(
         (paintingInfo) => {
           this.paintingInfo = paintingInfo;
-          console.log(this.paintingInfo);
         }
       );
     });

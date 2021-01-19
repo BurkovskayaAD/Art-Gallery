@@ -19,7 +19,6 @@ export class ArtistsComponent implements OnInit {
     this.http.get(Constants.artistsApiUrl).subscribe(
       (artist) => {
         this.artist = artist;
-        console.log(this.artist);
       }
     );
   }

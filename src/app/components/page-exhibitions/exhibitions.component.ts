@@ -18,7 +18,6 @@ export class ExhibitionsComponent implements OnInit {
     this.http.get(Constants.exhibitionsApiUrl).subscribe(
       (exhibition) => {
         this.exhibition = exhibition;
-        console.log(this.exhibition);
       }
     );
   }

@@ -29,7 +29,6 @@ export class PageRegistrationFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // ????????????????
   // onChange($event: Event): void {
   //   const pass = ($event.target as HTMLDataElement);
   //   console.log(pass);

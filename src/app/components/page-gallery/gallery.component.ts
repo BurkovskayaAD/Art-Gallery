@@ -19,7 +19,6 @@ export class GalleryComponent implements OnInit {
     this.http.get(Constants.paintingsApiUrl).subscribe(
       (painting) => {
         this.painting = painting;
-        console.log(this.painting);
       }
     );
   }
