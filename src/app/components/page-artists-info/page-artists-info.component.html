@@ -1,10 +1,11 @@
 <a class="back" routerLink="/artists">← Back</a>
-<div *ngIf="artistInfo" class="row pb-5 artist-info-block">
-  <div class="col-lg-1"></div>
-  <div class="col-lg py-2 px-5 photo-block">
+
+<div *ngIf="artistInfo" class="artist-info-block pb-5">
+  <div class="photo-block">
     <img src="http://localhost:3010/images/{{artistInfo.photo}}" alt="photo" class="photo">
   </div>
-  <div class="col-lg py-2 px-5 text-block">
+
+  <div class="text-block">
     <div class="text-info">Name:</div>
     <div class="answer-info">{{artistInfo.name}}</div>
 
@@ -20,6 +21,6 @@
     <div class="text-info">Date Death:</div>
     <div class="answer-info">{{artistInfo.dateDeath | date: 'longDate'}}</div>
     <div *ngIf="artistInfo.dateDeath == null" class="answer-info">Alive</div>
+
   </div>
-  <div class="col-lg-1"></div>
 </div>

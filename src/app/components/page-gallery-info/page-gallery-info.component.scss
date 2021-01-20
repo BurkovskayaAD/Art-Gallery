@@ -7,21 +7,20 @@
   color: #4a4a4a;
 }
 
-.col-md {
-  padding: 0;
-}
-
 .painting-info-block {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .photo {
-  width: 100%;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
 }
 
 .text-block {
+  width: 350px;
+  padding: 0 20px;
 }
 
 .text-info {
@@ -34,6 +33,30 @@
 .answer-info {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
-  /*font-weight: bold;*/
   color: #151515;
+}
+
+@media (max-width: 767px) {
+  .text-block {
+    width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .painting-info-block {
+    flex-direction: column;
+  }
+  .photo {
+    width: 100%;
+  }
+  .photo-block {
+    display: flex;
+    justify-content: center;
+  }
+  .text-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
 }

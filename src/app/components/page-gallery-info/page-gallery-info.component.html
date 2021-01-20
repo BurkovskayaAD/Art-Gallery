@@ -1,10 +1,12 @@
 <a class="back" routerLink="/gallery">← Back</a>
-<div *ngIf="paintingInfo" class="row pb-5 painting-info-block">
-  <div class="col-lg-1"></div>
-  <div class="col-lg py-2 px-5 photo-block">
+
+<div *ngIf="paintingInfo" class="pb-5 painting-info-block">
+
+  <div class="photo-block">
     <img src="http://localhost:3010/images/{{paintingInfo.picture}}" alt="photo" class="photo">
   </div>
-  <div class="col-lg py-2 px-5 text-block">
+
+  <div class="text-block">
     <div class="text-info">Name:</div>
     <div class="answer-info">{{paintingInfo.name}}</div>
 
@@ -18,5 +20,5 @@
     <div class="answer-info">{{paintingInfo.dateCreation | date: 'yyyy'}}</div>
 
   </div>
-  <div class="col-lg-1"></div>
+
 </div>
