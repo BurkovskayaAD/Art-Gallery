@@ -50,6 +50,21 @@
   outline: none;
 }
 
+.input-block{
+  padding: 32px 16px 0 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+.input-style{
+  width: 368px;
+  padding-left: 25px;
+}
+.icon-style{
+  height: 26px;
+  margin-right: -22px;
+  position: relative;
+}
+
 
 @media (max-width: 500px) {
   .artist-photo {

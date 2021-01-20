@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output} from '@angular/core';
 import {HttpServicesService} from '../../services/http-services.service';
 import {Constants} from '../../Constants';
 
@@ -14,6 +14,9 @@ export class ArtistsComponent implements OnInit {
   }
 
   artist;
+  booleanSearch = false;
+
+  @Input() search: string;
 
   ngOnInit(): void {
     this.http.get(Constants.artistsApiUrl).subscribe(
@@ -21,6 +24,11 @@ export class ArtistsComponent implements OnInit {
         this.artist = artist;
       }
     );
+  }
+
+  searchChange(searchArtist: string): void{
+    this.search = searchArtist;
+    this.booleanSearch = searchArtist !== '';
   }
 
 }
