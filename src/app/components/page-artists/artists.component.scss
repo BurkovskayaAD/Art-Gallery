@@ -50,10 +50,17 @@
   outline: none;
 }
 
-.input-block{
-  padding: 32px 16px 0 16px;
+.options-block{
   display: flex;
   justify-content: flex-end;
+}
+
+.select{
+  margin: 32px 16px 0 16px;
+}
+
+.input-block{
+  margin: 32px 16px 0 16px;
 }
 .input-style{
   width: 368px;
@@ -69,6 +76,12 @@
 @media (max-width: 500px) {
   .artist-photo {
     width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .input-style{
+    width: 150px;
   }
 }
 

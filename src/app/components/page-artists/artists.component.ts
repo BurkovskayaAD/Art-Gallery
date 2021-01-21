@@ -14,9 +14,10 @@ export class ArtistsComponent implements OnInit {
   }
 
   artist;
-  booleanSearch = false;
 
   @Input() search: string;
+  @Input() selection: string;
+
 
   ngOnInit(): void {
     this.http.get(Constants.artistsApiUrl).subscribe(
@@ -28,7 +29,36 @@ export class ArtistsComponent implements OnInit {
 
   searchChange(searchArtist: string): void{
     this.search = searchArtist;
-    this.booleanSearch = searchArtist !== '';
+  }
+
+  selectionChange(selectionArtist): void {
+    this.selection = selectionArtist;
+    console.log(selectionArtist);
+  }
+
+  Search(): void {
+    if (this.search !== ''){
+      console.log(this.search);
+
+      // this.http.get(Constants.artistsApiUrl).subscribe(
+      //   (artist) => {
+      //     this.artist = artist.filter(res => {
+      //       return res.artist.name.toLocaleLowerCase().match(this.search.toLocaleLowerCase());
+      //     });
+      //   }
+      // );
+
+
+      // this.http.get(Constants.artistsSearchApiUrl, this.search).subscribe(
+      //   (artist) => {
+      //     this.artist = artist;
+      //   }
+      // );
+
+
+    } else if (this.search === ''){
+      this.ngOnInit();
+    }
   }
 
 }
