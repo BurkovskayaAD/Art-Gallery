@@ -15,7 +15,7 @@ export class ArtistsComponent implements OnInit {
 
   artist;
 
-  @Input() search: string;
+  @Input() searchArtist: string;
   @Input() selection: string;
 
 
@@ -27,8 +27,8 @@ export class ArtistsComponent implements OnInit {
     );
   }
 
-  searchChange(searchArtist: string): void{
-    this.search = searchArtist;
+  searchArtistChange(searchArtist: string): void{
+    this.searchArtist = searchArtist;
   }
 
   selectionChange(selectionArtist): void {
@@ -36,29 +36,5 @@ export class ArtistsComponent implements OnInit {
     console.log(selectionArtist);
   }
 
-  Search(): void {
-    if (this.search !== ''){
-      console.log(this.search);
-
-      // this.http.get(Constants.artistsApiUrl).subscribe(
-      //   (artist) => {
-      //     this.artist = artist.filter(res => {
-      //       return res.artist.name.toLocaleLowerCase().match(this.search.toLocaleLowerCase());
-      //     });
-      //   }
-      // );
-
-
-      // this.http.get(Constants.artistsSearchApiUrl, this.search).subscribe(
-      //   (artist) => {
-      //     this.artist = artist;
-      //   }
-      // );
-
-
-    } else if (this.search === ''){
-      this.ngOnInit();
-    }
-  }
 
 }

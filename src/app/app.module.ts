@@ -24,6 +24,9 @@ import {PageAuthorizationComponent} from './components/page-authorization/page-a
 import {PageAuthorizationFormComponent} from './components/page-authorization-form/page-authorization-form.component';
 import {PageArtistsInfoComponent} from './components/page-artists-info/page-artists-info.component';
 import {PageGalleryInfoComponent} from './components/page-gallery-info/page-gallery-info.component';
+import { ArtistSearchPipe } from './pipes/artist-search.pipe';
+import { ArtistSelectionPipe } from './pipes/artist-selection.pipe';
+import { PaintingSearchPipe } from './pipes/painting-search.pipe';
 
 const appRoutes: Routes = [
   {path: '', component: MainGalleryComponent},
@@ -53,7 +56,10 @@ const appRoutes: Routes = [
     PageAuthorizationComponent,
     PageAuthorizationFormComponent,
     PageArtistsInfoComponent,
-    PageGalleryInfoComponent
+    PageGalleryInfoComponent,
+    ArtistSearchPipe,
+    ArtistSelectionPipe,
+    PaintingSearchPipe
   ],
   imports: [
     BrowserModule,

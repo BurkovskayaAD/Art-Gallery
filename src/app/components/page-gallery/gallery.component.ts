@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {HttpServicesService} from '../../services/http-services.service';
 import {Constants} from '../../Constants';
 
@@ -14,6 +14,7 @@ export class GalleryComponent implements OnInit {
   }
 
   painting;
+  @Input() searchPainting: string;
 
   ngOnInit(): void {
     this.http.get(Constants.paintingsApiUrl).subscribe(
@@ -21,6 +22,10 @@ export class GalleryComponent implements OnInit {
         this.painting = painting;
       }
     );
+  }
+
+  searchPaintingChange(searchPainting: string): void{
+    this.searchPainting = searchPainting;
   }
 
 }

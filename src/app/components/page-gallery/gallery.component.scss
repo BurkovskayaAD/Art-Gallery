@@ -50,6 +50,24 @@
   outline: none;
 }
 
+.options-block{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input-block{
+  margin: 32px 16px 0 16px;
+}
+.input-style{
+  width: 368px;
+  padding-left: 25px;
+}
+.icon-style{
+  height: 26px;
+  margin-right: -22px;
+  position: relative;
+}
+
 @media (max-width: 768px) {
   .cover {
     height: 500px;
