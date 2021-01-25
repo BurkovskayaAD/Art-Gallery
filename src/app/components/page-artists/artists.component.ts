@@ -33,7 +33,6 @@ export class ArtistsComponent implements OnInit {
 
   selectionChange(selectionArtist): void {
     this.selection = selectionArtist;
-    console.log(selectionArtist);
   }
 
 
