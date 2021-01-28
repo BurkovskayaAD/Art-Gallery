@@ -22,10 +22,15 @@ export class PageAuthorizationFormComponent implements OnInit {
   @Output() addNewOutput = new EventEmitter();
 
   ngOnInit(): void {
-    // this.authService.authState.subscribe((user) => {
-    //   this.user = user;
-    // });
   }
+
+
+  onSubmit(): void {
+    this.addNewOutput.emit(this.authorizationUser.value);
+  }
+
+
+
 
   // signInWithGoogle(): any{
   //   this.authService.signIn(GoogleLoginProvider.PROVIDER_ID);

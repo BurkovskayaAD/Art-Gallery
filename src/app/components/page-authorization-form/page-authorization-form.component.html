@@ -1,7 +1,7 @@
 <div class="authorization-page">
   <div class="authorization-block">
 
-    <form id="autForm" [formGroup]="authorizationUser" class="authorization-form" novalidate>
+    <form id="autForm" [formGroup]="authorizationUser" (ngSubmit)="onSubmit()" class="authorization-form" novalidate>
 
       <div class="authorization-text">Authorization</div>
 
