@@ -27,6 +27,8 @@ import {PageGalleryInfoComponent} from './components/page-gallery-info/page-gall
 import { ArtistSearchPipe } from './pipes/artist-search.pipe';
 import { ArtistSelectionPipe } from './pipes/artist-selection.pipe';
 import { PaintingSearchPipe } from './pipes/painting-search.pipe';
+import { PageTestimonialsComponent } from './components/page-testimonials/page-testimonials.component';
+import { PageTestimonialsFormComponent } from './components/page-testimonials-form/page-testimonials-form.component';
 
 const appRoutes: Routes = [
   {path: '', component: MainGalleryComponent},
@@ -36,6 +38,7 @@ const appRoutes: Routes = [
   {path: 'contacts', component: ContactsComponent},
   {path: 'registration', component: PageRegistrationComponent},
   {path: 'authorization', component: PageAuthorizationComponent},
+  {path: 'testimonials', component: PageTestimonialsComponent},
   {path: 'artists/:id', component: PageArtistsInfoComponent},
   {path: 'gallery/:id', component: PageGalleryInfoComponent}
 ];
@@ -59,7 +62,9 @@ const appRoutes: Routes = [
     PageGalleryInfoComponent,
     ArtistSearchPipe,
     ArtistSelectionPipe,
-    PaintingSearchPipe
+    PaintingSearchPipe,
+    PageTestimonialsComponent,
+    PageTestimonialsFormComponent
   ],
   imports: [
     BrowserModule,
@@ -85,6 +90,7 @@ const appRoutes: Routes = [
     }],
   bootstrap: [AppComponent]
 })
+
 export class AppModule {
 }
 

@@ -1,0 +1,63 @@
+.testimonial-form-block {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.testimonial-form {
+  width: 50%;
+}
+
+input {
+  width: 80%;
+}
+
+textarea {
+  width: 80%;
+}
+
+.input-block{
+  margin: 10px 0;
+}
+
+.button-block {
+  justify-content: center;
+  display: flex;
+  width: 80%;
+  margin-left: 20%;
+}
+
+.button-form{
+  width: 40%;
+  margin: 10px 0;
+  text-decoration: none;
+  border-radius: 1px;
+  border: 1px solid black;
+}
+
+.text-form{
+  margin: 0;
+  width: 20%;
+}
+
+.textarea-block{
+  margin: 0;
+  display: flex;
+  vertical-align: top;
+}
+
+@media (max-width: 768px) {
+  input{
+    width: 100%;
+  }
+  textarea{
+    width: 100%;
+  }
+  .textarea-block{
+    display: block;
+  }
+  .button-block{
+    width: 100%;
+    margin-left: 0;
+  }
+}

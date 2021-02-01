@@ -1,0 +1,24 @@
+<div class="testimonial-form-block">
+  <form id="tesForm" [formGroup]="testimonial" (ngSubmit)="onSubmit()" class="testimonial-form" novalidate>
+
+    <div class="input-block">
+      <label class="text-form">Name</label>
+      <input type="text" name="name" formControlName="name">
+    </div>
+
+    <div class="input-block">
+      <label class="text-form">Email</label>
+      <input type="email" name="email" formControlName="email">
+    </div>
+
+    <div class="input-block textarea-block">
+      <label class="text-form">Testimonial</label>
+      <textarea class="text-area" name="testimonial" formControlName="testimonial"></textarea>
+    </div>
+
+    <div class="button-block">
+      <button class="button-form" type="submit" [disabled]="!testimonial.valid">Add</button>
+    </div>
+
+  </form>
+</div>

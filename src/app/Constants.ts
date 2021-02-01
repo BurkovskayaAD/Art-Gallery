@@ -10,5 +10,6 @@ export class Constants {
   static readonly paintingsMoreInfoApiUrl = `${environment.baseUrl}/paintings/`;
   static readonly usersApiUrl = `${environment.baseUrl}/users`;
   static readonly usersCheckApiUrl = `${environment.baseUrl}/users/check`;
+  static readonly testimonialsApiUrl = `${environment.baseUrl}/testimonials`;
 
 }
