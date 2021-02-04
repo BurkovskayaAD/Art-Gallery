@@ -1,4 +1,15 @@
 <div class="testimonial-page">
   <a class="back" routerLink="/">← Back</a>
   <app-page-testimonials-form (addNewOutput)="addNewTestimonial($event)"></app-page-testimonials-form>
+
+  <div class="testimonial-block" *ngFor="let item of list">
+    <div class="testimonial-article">
+      <div class="testimonial-name">{{item.name}}</div>
+      <div class="testimonial">
+        <img src="../../../assets/testimonials.png" class="testimonial-image">
+        <div class="testimonial-text">{{item.testimonial}}</div>
+      </div>
+    </div>
+  </div>
+
 </div>

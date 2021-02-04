@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpServicesService} from '../../services/http-services.service';
-import {Router} from '@angular/router';
 import {Constants} from '../../Constants';
 
 @Component({
@@ -10,29 +9,43 @@ import {Constants} from '../../Constants';
 })
 export class PageTestimonialsComponent implements OnInit {
 
-  constructor(private http: HttpServicesService) { }
+  constructor(private http: HttpServicesService) {
+  }
 
   testimonial;
+  list;
 
   ngOnInit(): void {
     this.http.get(Constants.testimonialsApiUrl).subscribe(
-      (testimonial) => {
-        this.testimonial = testimonial;
-        console.log(this.testimonial);
-      }
+      // (testimonial) => {
+      //   this.testimonial = testimonial;
+      //   console.log(this.testimonial);
+      // }
     );
+
+    this.list = [
+      {name: 'Hanna', testimonial: 'Best'},
+      {name: 'Yulia', testimonial: 'fdfgdfgddfgfd'},
+      {name: 'Anastasia', testimonial: 'jsdfiksdfv dsuyufdgvcmdhf skdhfdkshfkdsfh siudyfuidsf kshfhj sidhfskjdf'},
+      {name: 'Yaroslava', testimonial: 'Best'},
+      {name: 'Dima', testimonial: 'Best ddkfkjdifj sjfksudifhdks sljdfk'},
+      {
+        name: 'Petr',
+        testimonial: 'Best kdjflsdkjfis isudfidufiudsl lkjdskjdkfjds iusdfid sdjf skdhf wyusdhd skf djdhsl duaosid fhskdfj dskfosidfjf dskhdfshuds kshdfkjdshf iusdfdshk'
+      }
+    ];
   }
 
   addNewTestimonial(addTestimonial: any): void {
     this.http.post(Constants.testimonialsApiUrl, addTestimonial).subscribe(
-      (data) => {
-        console.log(addTestimonial);
-        sessionStorage.setItem('testimonialAdded', 'true');
-        // window.location.reload();
-      },
-      error => {
-        alert('Something went wrong');
-      }
+      // (data) => {
+      //   console.log(addTestimonial);
+      //   sessionStorage.setItem('testimonialAdded', 'true');
+      //   // window.location.reload();
+      // },
+      // error => {
+      //   alert('Something went wrong');
+      // }
     );
   }
 
