@@ -51,6 +51,24 @@
   width: 100%;
 }
 
+.options-block{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input-block{
+  margin: 32px 16px 0 16px;
+}
+.input-style{
+  width: 368px;
+  padding-left: 25px;
+}
+.icon-style{
+  height: 26px;
+  margin-right: -22px;
+  position: relative;
+}
+
 @media (max-width: 767px) {
   .big-text-photo {
     font-size: 50px;

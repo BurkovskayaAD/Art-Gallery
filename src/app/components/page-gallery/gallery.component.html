@@ -1,6 +1,6 @@
 <div class="gallery">
 
-  <div class="main-photo pt-0 pb-2">
+  <div class="main-photo pt-0">
     <img src="../../../assets/112.jpg" class="photo-style w-100">
     <h1 class="big-text-photo">GALLERY</h1>
   </div>
@@ -18,9 +18,9 @@
   </div>
 
 
-  <div class="block-gallery py-5">
+  <div class="block-gallery py-3">
     <div class="row">
-      <div *ngFor="let item of painting | paintingSearch:searchPainting" class="col-md p-0" [routerLink]="[item._id]">
+      <div *ngFor="let item of painting | artistSearch:searchPainting" class="col-md p-0" [routerLink]="[item._id]">
         <img src="http://localhost:3010/images/{{item.picture}}" alt="paint" class="paint">
         <div class="name-paint">{{item.name}}</div>
       </div>

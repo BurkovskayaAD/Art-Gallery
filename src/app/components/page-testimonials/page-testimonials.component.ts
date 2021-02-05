@@ -14,6 +14,7 @@ export class PageTestimonialsComponent implements OnInit {
 
   testimonial;
   list;
+  counter = 3;
 
   ngOnInit(): void {
     this.http.get(Constants.testimonialsApiUrl).subscribe(
@@ -32,7 +33,25 @@ export class PageTestimonialsComponent implements OnInit {
       {
         name: 'Petr',
         testimonial: 'Best kdjflsdkjfis isudfidufiudsl lkjdskjdkfjds iusdfid sdjf skdhf wyusdhd skf djdhsl duaosid fhskdfj dskfosidfjf dskhdfshuds kshdfkjdshf iusdfdshk'
-      }
+      },
+      {name: 'Hanna', testimonial: 'Best'},
+      {name: 'Yulia', testimonial: 'fdfgdfgddfgfd'},
+      {name: 'Anastasia', testimonial: 'jsdfiksdfv dsuyufdgvcmdhf skdhfdkshfkdsfh siudyfuidsf kshfhj sidhfskjdf'},
+      {name: 'Yaroslava', testimonial: 'Best'},
+      {name: 'Dima', testimonial: 'Best ddkfkjdifj sjfksudifhdks sljdfk'},
+      {
+        name: 'Petr',
+        testimonial: 'Best kdjflsdkjfis isudfidufiudsl lkjdskjdkfjds iusdfid sdjf skdhf wyusdhd skf djdhsl duaosid fhskdfj dskfosidfjf dskhdfshuds kshdfkjdshf iusdfdshk'
+      },
+      {name: 'Hanna', testimonial: 'Best'},
+      {name: 'Yulia', testimonial: 'fdfgdfgddfgfd'},
+      {name: 'Anastasia', testimonial: 'jsdfiksdfv dsuyufdgvcmdhf skdhfdkshfkdsfh siudyfuidsf kshfhj sidhfskjdf'},
+      {name: 'Yaroslava', testimonial: 'Best'},
+      {name: 'Dima', testimonial: 'Best ddkfkjdifj sjfksudifhdks sljdfk'},
+      {
+        name: 'Petr',
+        testimonial: 'Best kdjflsdkjfis isudfidufiudsl lkjdskjdkfjds iusdfid sdjf skdhf wyusdhd skf djdhsl duaosid fhskdfj dskfosidfjf dskhdfshuds kshdfkjdshf iusdfdshk'
+      },
     ];
   }
 
@@ -47,6 +66,10 @@ export class PageTestimonialsComponent implements OnInit {
       //   alert('Something went wrong');
       // }
     );
+  }
+
+  onLoad(): void{
+    this.counter = this.counter + 3;
   }
 
 }

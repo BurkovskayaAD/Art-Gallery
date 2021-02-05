@@ -26,7 +26,6 @@ import {PageArtistsInfoComponent} from './components/page-artists-info/page-arti
 import {PageGalleryInfoComponent} from './components/page-gallery-info/page-gallery-info.component';
 import { ArtistSearchPipe } from './pipes/artist-search.pipe';
 import { ArtistSelectionPipe } from './pipes/artist-selection.pipe';
-import { PaintingSearchPipe } from './pipes/painting-search.pipe';
 import { PageTestimonialsComponent } from './components/page-testimonials/page-testimonials.component';
 import { PageTestimonialsFormComponent } from './components/page-testimonials-form/page-testimonials-form.component';
 
@@ -62,7 +61,6 @@ const appRoutes: Routes = [
     PageGalleryInfoComponent,
     ArtistSearchPipe,
     ArtistSelectionPipe,
-    PaintingSearchPipe,
     PageTestimonialsComponent,
     PageTestimonialsFormComponent
   ],

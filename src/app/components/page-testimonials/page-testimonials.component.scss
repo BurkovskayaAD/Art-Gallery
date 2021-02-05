@@ -40,3 +40,9 @@
   padding-right: 20px;
   height: 30px;
 }
+
+@media (max-width: 530px) {
+  .testimonial-article{
+    width: 80%;
+  }
+}

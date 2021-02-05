@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {HttpServicesService} from '../../services/http-services.service';
 import {Constants} from '../../Constants';
 
@@ -13,6 +13,7 @@ export class ExhibitionsComponent implements OnInit {
   }
 
   exhibition;
+  @Input() searchExhibition: string;
 
   ngOnInit(): void {
     this.http.get(Constants.exhibitionsApiUrl).subscribe(
@@ -20,6 +21,10 @@ export class ExhibitionsComponent implements OnInit {
         this.exhibition = exhibition;
       }
     );
+  }
+
+  searchExhibitionChange(searchExhibition: string): void{
+    this.searchExhibition = searchExhibition;
   }
 
 }
