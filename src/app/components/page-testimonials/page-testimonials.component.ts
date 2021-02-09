@@ -17,6 +17,7 @@ export class PageTestimonialsComponent implements OnInit {
   counter = 3;
 
   ngOnInit(): void {
+    window.scrollTo(0, 0);
     this.http.get(Constants.testimonialsApiUrl).subscribe(
       // (testimonial) => {
       //   this.testimonial = testimonial;
@@ -68,7 +69,7 @@ export class PageTestimonialsComponent implements OnInit {
     );
   }
 
-  onLoad(): void{
+  onLoad(): void {
     this.counter = this.counter + 3;
   }
 

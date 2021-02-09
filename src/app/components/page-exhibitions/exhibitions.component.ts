@@ -23,7 +23,7 @@ export class ExhibitionsComponent implements OnInit {
     );
   }
 
-  searchExhibitionChange(searchExhibition: string): void{
+  searchExhibitionChange(searchExhibition: string): void {
     this.searchExhibition = searchExhibition;
   }
 

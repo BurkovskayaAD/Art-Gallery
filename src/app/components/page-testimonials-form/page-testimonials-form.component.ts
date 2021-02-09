@@ -8,7 +8,8 @@ import {FormBuilder, Validators} from '@angular/forms';
 })
 export class PageTestimonialsFormComponent implements OnInit {
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder) {
+  }
 
   testimonial = this.fb.group({
     name: ['', Validators.required],

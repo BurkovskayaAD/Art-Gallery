@@ -27,7 +27,7 @@ export class ArtistsComponent implements OnInit {
     );
   }
 
-  searchArtistChange(searchArtist: string): void{
+  searchArtistChange(searchArtist: string): void {
     this.searchArtist = searchArtist;
   }
 

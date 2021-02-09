@@ -32,6 +32,11 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
+  transition: all .7s;
+  &:hover{
+    width: 410px;
+    height: 370px;
+  }
 }
 
 .name-paint {

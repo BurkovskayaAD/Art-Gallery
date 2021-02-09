@@ -1,4 +1,4 @@
-import { ArtistSearchPipe } from './artist-search.pipe';
+import {ArtistSearchPipe} from './artist-search.pipe';
 
 describe('ArtistSearchPipe', () => {
   it('create an instance', () => {

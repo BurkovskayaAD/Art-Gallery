@@ -18,7 +18,7 @@ textarea {
   width: 80%;
 }
 
-.input-block{
+.input-block {
   margin: 10px 0;
 }
 
@@ -29,7 +29,7 @@ textarea {
   margin-left: 20%;
 }
 
-.button-form{
+.button-form {
   width: 40%;
   margin: 10px 0;
   text-decoration: none;
@@ -37,35 +37,35 @@ textarea {
   border: 1px solid black;
 }
 
-.text-form{
+.text-form {
   margin: 0;
   width: 20%;
 }
 
-.textarea-block{
+.textarea-block {
   margin: 0;
   display: flex;
   vertical-align: top;
 }
 
 @media (max-width: 830px) {
-  input{
+  input {
     width: 100%;
   }
-  textarea{
+  textarea {
     width: 100%;
   }
-  .textarea-block{
+  .textarea-block {
     display: block;
   }
-  .button-block{
+  .button-block {
     width: 100%;
     margin-left: 0;
   }
 }
 
 @media (max-width: 530px) {
-  .testimonial-form{
+  .testimonial-form {
     width: 80%;
   }
 }

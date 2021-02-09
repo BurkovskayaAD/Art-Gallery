@@ -1,4 +1,4 @@
-import { ArtistSelectionPipe } from './artist-selection.pipe';
+import {ArtistSelectionPipe} from './artist-selection.pipe';
 
 describe('ArtistSelectionPipe', () => {
   it('create an instance', () => {

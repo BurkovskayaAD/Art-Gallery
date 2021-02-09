@@ -24,7 +24,7 @@ export class GalleryComponent implements OnInit {
     );
   }
 
-  searchPaintingChange(searchPainting: string): void{
+  searchPaintingChange(searchPainting: string): void {
     this.searchPainting = searchPainting;
   }
 

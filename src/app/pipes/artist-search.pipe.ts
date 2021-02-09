@@ -1,4 +1,4 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import {Pipe, PipeTransform} from '@angular/core';
 
 @Pipe({
   name: 'artistSearch'
@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class ArtistSearchPipe implements PipeTransform {
 
   transform(artist, searchArtist: string): unknown {
-    if (!artist || !searchArtist){
+    if (!artist || !searchArtist) {
       return artist;
     }
 
